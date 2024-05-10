@@ -3,17 +3,34 @@ version: '3.4'
 services:
   pms.apis:
     image: ${DOCKER_REGISTRY-}pmsapis
+    container_name: pmsapi
     build:
       context: .
-      dockerfile: src/Services/Pms.APIs/Dockerfile
-  
+      dockerfile: src/Services/Pms/Pms.APIs/Dockerfile
+    depends_on:
+      - massrabbit
+    networks:
+        - backend
+ 
   account.apis:
     image: ${DOCKER_REGISTRY-}accountapis
+    container_name: accountApi
     build:
       context: .
-      dockerfile: src/Services/Account.APIs/Dockerfile
-
+      dockerfile: src/Services/Account/Account.APIs/Dockerfile
+    depends_on:
+      - massrabbit
+    networks:
+        - backend
+ 
   massrabbit:
     image: masstransit/rabbitmq 
+    container_name: masstransit
     ports:
       - "15672:15672"
+      - "5672:5672"
+    networks:
+        - backend
+ 
+networks:
+  backend:

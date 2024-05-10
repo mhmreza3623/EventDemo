@@ -10,12 +10,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="MassTransit" Version="8.2.2" />
-		<PackageReference Include="MassTransit.Abstractions" Version="8.2.2" />
-		<PackageReference Include="MassTransit.AspNetCore" Version="7.3.1" />
-		<PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.3.1" />
-		<PackageReference Include="MassTransit.RabbitMQ" Version="8.2.2" />
-
 		<PackageReference Include="MediatR" Version="12.2.0" />
 		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
 
@@ -25,10 +19,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="App\Configs\" />
 		<Folder Include="App\Core\Models\" />
 		<Folder Include="App\Core\" />
 		<Folder Include="App\Api\" />
+		<Folder Include="App\EventHandlers\DomainEvents\" />
 	</ItemGroup>
 
 	<ItemGroup>

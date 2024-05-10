@@ -102,6 +102,7 @@ G:\Sources\EventDemo\src\Services\Pms\Pms.APIs\obj\Debug\net8.0\Pms.APIs.Assembl
 G:\Sources\EventDemo\src\Services\Pms\Pms.APIs\obj\Debug\net8.0\Pms.APIs.csproj.CoreCompileInputs.cache
 G:\Sources\EventDemo\src\Services\Pms\Pms.APIs\obj\Debug\net8.0\Pms.APIs.MvcApplicationPartsAssemblyInfo.cs
 G:\Sources\EventDemo\src\Services\Pms\Pms.APIs\obj\Debug\net8.0\Pms.APIs.MvcApplicationPartsAssemblyInfo.cache
+G:\Sources\EventDemo\src\Services\Pms\Pms.APIs\obj\Debug\net8.0\Pms.APIs.sourcelink.json
 G:\Sources\EventDemo\src\Services\Pms\Pms.APIs\obj\Debug\net8.0\staticwebassets.build.json
 G:\Sources\EventDemo\src\Services\Pms\Pms.APIs\obj\Debug\net8.0\staticwebassets.development.json
 G:\Sources\EventDemo\src\Services\Pms\Pms.APIs\obj\Debug\net8.0\staticwebassets\msbuild.Pms.APIs.Microsoft.AspNetCore.StaticWebAssets.props

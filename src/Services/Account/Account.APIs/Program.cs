@@ -1,5 +1,4 @@
-
-using Account.APIs.App.EventHandlers;
+using Account.APIs.App.EventHandlers.IntegrationEvents;
 using Core.EventBus.Masstransit;
 using SharedModels.PaymentEvents;
 using System.Reflection;
@@ -8,25 +7,26 @@ namespace Account.APIs
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
 
             builder.Services.AddControllers();
+            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen();
 
+            //MediatR
             builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
-
-            builder.Services.AddMassTransitConfigAsync(builder.Configuration, (opt =>
+            //ServiceBus
+            builder.Services.AddMassTransitConfig(builder.Configuration, (opt =>
             {
                 opt.AddHandler<PaymentCreated, PaymentCreatedHandler>();
             }));
 
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
 
@@ -43,6 +43,8 @@ namespace Account.APIs
 
 
             app.MapControllers();
+
+            app.MapGet("/health", () => { return Task.CompletedTask; });
 
             app.Run();
         }

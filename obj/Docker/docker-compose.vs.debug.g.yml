@@ -3,7 +3,6 @@ version: '3.4'
 services:
   account.apis:
     image: accountapis:dev
-    container_name: "Pms.APIs_1_1"
     build:
       target: base
       labels:
@@ -14,7 +13,7 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=/.nuget/fallbackpackages
     volumes:
-      - G:\Sources\EventDemo\src\Services\Account.APIs:/app
+      - G:\Sources\EventDemo\src\Services\Account\Account.APIs:/app
       - G:\Sources\EventDemo:/src
       - C:\Users\SMT\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\SMT\.nuget\packages\:/.nuget/packages:ro
@@ -36,7 +35,6 @@ services:
     tty: true
   pms.apis:
     image: pmsapis:dev
-    container_name: "Pms.APIs_1_1_1"
     build:
       target: base
       labels:
@@ -47,7 +45,7 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=/.nuget/fallbackpackages
     volumes:
-      - G:\Sources\EventDemo\src\Services\Pms.APIs:/app
+      - G:\Sources\EventDemo\src\Services\Pms\Pms.APIs:/app
       - G:\Sources\EventDemo:/src
       - C:\Users\SMT\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\SMT\.nuget\packages\:/.nuget/packages:ro

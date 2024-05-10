@@ -1,4 +1,5 @@
-﻿using MassTransit;
+﻿using Core.EventBus.Handlers;
+using MassTransit;
 using Microsoft.Extensions.Logging;
 using Event = Core.EventBus.Events.Event;
 
@@ -44,16 +45,6 @@ namespace Core.EventBus.Masstransit
             else
                 await Task.CompletedTask;
         }
-    }
-
-    public interface IMassTransitEventBusPipelineBehaviour
-    {
-        Task Execute(ConsumerPipelineContext context, PipelineOperation<ConsumerPipelineContext> next);
-    }
-
-    public class ConsumerPipelineContext
-    {
-        public Event Event { get; set; }
     }
 
     public delegate Task PipelineOperation<TContext>(TContext cntx);

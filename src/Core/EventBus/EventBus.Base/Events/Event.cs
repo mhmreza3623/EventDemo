@@ -1,6 +1,6 @@
 ﻿namespace Core.EventBus.Events
 {
-    public record Event
+    public class Event
     {
         public Event()
         {

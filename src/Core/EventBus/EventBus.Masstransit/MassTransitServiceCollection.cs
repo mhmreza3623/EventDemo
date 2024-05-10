@@ -7,7 +7,7 @@ namespace Core.EventBus.Masstransit
 {
     public static class MassTransitServiceCollection
     {
-        public static void AddMassTransitConfigAsync(this IServiceCollection services, IConfiguration configuration, Action<MassTransitEventBusOptions> setupAction = null)
+        public static void AddMassTransitConfigAsync(this IServiceCollection services, IConfiguration configuration, Action<MassTransitEventBusOptions>? setupAction = null)
         {
             var options = new MassTransitEventBusOptions();
             if (setupAction != null)
@@ -23,15 +23,37 @@ namespace Core.EventBus.Masstransit
                 x.UsingRabbitMq((context, cfg) =>
                 {
                     x.SetKebabCaseEndpointNameFormatter();
-                    x.UsingRabbitMq((context, cfg) =>
+                    //x.UsingRabbitMq((context, cfg) =>
+                    //{
+                    //    cfg.ConfigureEndpoints(context);
+                    //    cfg.Host(config.RabbitMqHostName, config.RabbitMqVirtualHost, h =>
+                    //    {
+                    //        h.Username(config.RabbitMqUsername);
+                    //        h.Password(config.RabbitMqPassword);
+                    //    });
+                    //});
+
+                    //x.UsingRabbitMq((context, cfg) =>
+                    //{
+                    //    cfg.Host("localhost", "/", h => {
+                    //        h.Username("guest");
+                    //        h.Password("guest");
+                    //    });
+
+                    //    cfg.ConfigureEndpoints(context);
+                    //});
+
+                    x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
                     {
-                        cfg.ConfigureEndpoints(context);
-                        cfg.Host(config.RabbitMqHostName, config.RabbitMqVirtualHost, h =>
+                        cfg.Host(config.RabbitMqHostName, q =>
                         {
-                            h.Username(config.RabbitMqUsername);
-                            h.Password(config.RabbitMqPassword);
+                            q.Username("guest");
+                            q.Password("guest");
+                           
                         });
-                    });
+
+                        cfg.ConfigureEndpoints(provider);
+                    }));
 
                     foreach (var consumerItem in options.GetConsumersInfo())
                     {

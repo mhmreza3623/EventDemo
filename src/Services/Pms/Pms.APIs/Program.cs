@@ -1,4 +1,6 @@
+using Core.EventBus.Interfaces;
 using Core.EventBus.Masstransit;
+using SharedModels.PaymentEvents;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,16 +8,15 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-
-builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
-
-
-builder.Services.AddMassTransitConfigAsync(builder.Configuration);
-
-
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+//mediatR
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+
+//ServiceBus
+builder.Services.AddMassTransitConfig(builder.Configuration);
 
 var app = builder.Build();
 

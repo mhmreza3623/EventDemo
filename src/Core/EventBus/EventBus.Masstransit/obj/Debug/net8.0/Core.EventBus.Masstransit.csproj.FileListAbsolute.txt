@@ -8,6 +8,7 @@ G:\Sources\EventDemo\src\Core\EventBus\EventBus.Masstransit\obj\Debug\net8.0\Cor
 G:\Sources\EventDemo\src\Core\EventBus\EventBus.Masstransit\obj\Debug\net8.0\Core.EventBus.Masstransit.AssemblyInfoInputs.cache
 G:\Sources\EventDemo\src\Core\EventBus\EventBus.Masstransit\obj\Debug\net8.0\Core.EventBus.Masstransit.AssemblyInfo.cs
 G:\Sources\EventDemo\src\Core\EventBus\EventBus.Masstransit\obj\Debug\net8.0\Core.EventBus.Masstransit.csproj.CoreCompileInputs.cache
+G:\Sources\EventDemo\src\Core\EventBus\EventBus.Masstransit\obj\Debug\net8.0\Core.EventBus.Masstransit.sourcelink.json
 G:\Sources\EventDemo\src\Core\EventBus\EventBus.Masstransit\obj\Debug\net8.0\Core.EventBus.Masstransit.csproj.CopyComplete
 G:\Sources\EventDemo\src\Core\EventBus\EventBus.Masstransit\obj\Debug\net8.0\Core.EventBus.Masstransit.dll
 G:\Sources\EventDemo\src\Core\EventBus\EventBus.Masstransit\obj\Debug\net8.0\refint\Core.EventBus.Masstransit.dll

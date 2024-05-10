@@ -100,6 +100,7 @@ G:\Sources\EventDemo\src\Services\Account\Account.APIs\obj\Debug\net8.0\Account.
 G:\Sources\EventDemo\src\Services\Account\Account.APIs\obj\Debug\net8.0\Account.APIs.csproj.CoreCompileInputs.cache
 G:\Sources\EventDemo\src\Services\Account\Account.APIs\obj\Debug\net8.0\Account.APIs.MvcApplicationPartsAssemblyInfo.cs
 G:\Sources\EventDemo\src\Services\Account\Account.APIs\obj\Debug\net8.0\Account.APIs.MvcApplicationPartsAssemblyInfo.cache
+G:\Sources\EventDemo\src\Services\Account\Account.APIs\obj\Debug\net8.0\Account.APIs.sourcelink.json
 G:\Sources\EventDemo\src\Services\Account\Account.APIs\obj\Debug\net8.0\staticwebassets.build.json
 G:\Sources\EventDemo\src\Services\Account\Account.APIs\obj\Debug\net8.0\staticwebassets.development.json
 G:\Sources\EventDemo\src\Services\Account\Account.APIs\obj\Debug\net8.0\staticwebassets\msbuild.Account.APIs.Microsoft.AspNetCore.StaticWebAssets.props

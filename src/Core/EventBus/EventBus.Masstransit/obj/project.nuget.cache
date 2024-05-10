@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pnkgl2dX+h2K02ajW/Ztiq44sY/VwHkz4odQ+A07gErN+kyF6FqQgYmg10pRFDsn6FNltS0T2uc5uGqUS4C4VQ==",
+  "dgSpecHash": "KRYlEboIvhIKR21Nji0lRH4MAOaPaLC/kshdaVaSo1cR0X1cswUVXt9xfH90ZJlNXUxUOLCun4BC2sr+1+hPQA==",
   "success": true,
   "projectFilePath": "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj",
   "expectedPackageFiles": [

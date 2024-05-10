@@ -19,7 +19,7 @@ namespace Pms.APIs.App.Api
         [HttpPost]
         public async Task<IActionResult> CreateOrder(PaymentDto orderDto)
         {
-            await _eventBus.Publish(new PaymentCreated(orderDto.SourceName, orderDto.DistinationName, orderDto.Price));
+            await _eventBus.Publish(new PaymentCreated(Guid.NewGuid(), orderDto.SourceName, orderDto.DistinationName, orderDto.Price));
 
             return Ok();
         }
