@@ -22,13 +22,6 @@ namespace Core.EventBus.Masstransit
             _consumers.Add((typeof(Consumer<TEvent, TEventHandler>), typeof(TEvent), typeof(TEventHandler), typeof(ConsumerDefenation<Consumer<TEvent, TEventHandler>, TEvent, TEventHandler>), typeof(IConsumerDefinition<Consumer<TEvent, TEventHandler>>)));
         }
 
-        public void AddHandler<TEvent, TEventHandler>()
-         where TEvent : Event
-         where TEventHandler : IConsumer<TEvent>
-        {
-            _consumers.Add((typeof(Consumer<TEvent, TEventHandler>), typeof(TEvent), typeof(TEventHandler), typeof(ConsumerDefenation<Consumer<TEvent, TEventHandler>, TEvent, TEventHandler>), typeof(IConsumerDefinition<Consumer<TEvent, TEventHandler>>)));
-        }
-
         public IList<(Type consumerType, Type eventType, Type handlerType, Type consumerDefenationType, Type consumerDefenationInterface)> GetConsumersInfo()
         {
             return _consumers.AsReadOnly();

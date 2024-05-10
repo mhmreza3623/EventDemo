@@ -1,4 +1,5 @@
 using Account.APIs.App.EventHandlers.IntegrationEvents;
+using Core.EventBus.Handlers;
 using Core.EventBus.Masstransit;
 using SharedModels.PaymentEvents;
 using System.Reflection;
@@ -22,10 +23,10 @@ namespace Account.APIs
             builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
             //ServiceBus
-            builder.Services.AddMassTransitConfig(builder.Configuration, (opt =>
+            builder.Services.AddMassTransitConfigAsync(builder.Configuration, o =>
             {
-                opt.AddHandler<PaymentCreated, PaymentCreatedHandler>();
-            }));
+                o.AddHandler<PaymentCreated, PaymentCreatedHandler>();
+            });
 
 
             var app = builder.Build();

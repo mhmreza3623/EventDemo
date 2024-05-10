@@ -1,4 +1,5 @@
 ﻿using Account.APIs.App.EventHandlers;
+using Account.APIs.App.EventHandlers.IntegrationEvents;
 using Core.EventBus.Interfaces;
 using MassTransit;
 using Microsoft.Extensions.Configuration;
@@ -21,7 +22,7 @@ namespace Core.EventBus.Masstransit
 
             services.AddMassTransit(x =>
             {
-                //x.AddConsumers(typeof(PaymentCreatedHandler).Assembly);
+                x.AddConsumers(typeof(PaymentCreatedHandler).Assembly);
 
                 x.SetKebabCaseEndpointNameFormatter();
 
@@ -43,6 +44,7 @@ namespace Core.EventBus.Masstransit
             });
 
             services.AddTransient<IEventPublisher, EventPublisher>();
+
             services.Configure<MassTransitConfiguration>(configuration.GetSection(MassTransitConfiguration.SectionName));
 
             foreach (var handlerType in options.GetConsumersInfo())

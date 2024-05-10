@@ -6,13 +6,11 @@ namespace SharedModels.PaymentEvents
     {
         public PaymentCreated(Guid tenantID, string source, string Distination, decimal price) : base(tenantID)
         {
-            TenantID = tenantID;
             Source = source;
             this.Distination = Distination;
             Price = price;
         }
 
-        public Guid TenantID { get; }
         public string Source { get; }
         public string Distination { get; }
         public decimal Price { get; }

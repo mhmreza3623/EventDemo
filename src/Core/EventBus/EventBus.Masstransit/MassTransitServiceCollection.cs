@@ -1,5 +1,6 @@
 ﻿using Core.EventBus.Interfaces;
 using MassTransit;
+using MassTransit.Metadata;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -22,44 +23,39 @@ namespace Core.EventBus.Masstransit
                 x.SetKebabCaseEndpointNameFormatter();
                 x.UsingRabbitMq((context, cfg) =>
                 {
-                    x.SetKebabCaseEndpointNameFormatter();
-                    //x.UsingRabbitMq((context, cfg) =>
+                    //x.UsingRabbitMq((ctx, cfg) =>
                     //{
-                    //    cfg.ConfigureEndpoints(context);
-                    //    cfg.Host(config.RabbitMqHostName, config.RabbitMqVirtualHost, h =>
+                    //    cfg.Host(config.RabbitMqHostName ?? throw new NullReferenceException("The host has not been specififed for RabbitMQ"), x =>
                     //    {
-                    //        h.Username(config.RabbitMqUsername);
-                    //        h.Password(config.RabbitMqPassword);
-                    //    });
-                    //});
-
-                    //x.UsingRabbitMq((context, cfg) =>
-                    //{
-                    //    cfg.Host("localhost", "/", h => {
-                    //        h.Username("guest");
-                    //        h.Password("guest");
+                    //        x.Username(config.RabbitMqUsername ?? throw new NullReferenceException("The username has not been specififed for RabbitMQ"));
+                    //        x.Password(config.RabbitMqPassword ?? throw new NullReferenceException("The password has not been specififed for RabbitMQ"));
                     //    });
 
-                    //    cfg.ConfigureEndpoints(context);
+                    //    cfg.ConfigureEndpoints(ctx);
                     //});
 
-                    x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
-                    {
-                        cfg.Host(config.RabbitMqHostName, q =>
-                        {
-                            q.Username("guest");
-                            q.Password("guest");
-                           
-                        });
+                    cfg.AutoStart = true;
 
-                        cfg.ConfigureEndpoints(provider);
-                    }));
+                    cfg.UseInstrumentation();
 
-                    foreach (var consumerItem in options.GetConsumersInfo())
-                    {
-                        x.AddConsumer(consumerItem.consumerType, consumerItem.consumerDefenationType);
-                    }
+                    //cfg.ApplyCustomBusConfiguration();
+
+                    if (HostMetadataCache.IsRunningInContainer)
+                        cfg.Host(config.RabbitMqHostName ?? throw new NullReferenceException("The host has not been specififed for RabbitMQ"), x =>
+                                               {
+                                                   x.Username(config.RabbitMqUsername ?? throw new NullReferenceException("The username has not been specififed for RabbitMQ"));
+                                                   x.Password(config.RabbitMqPassword ?? throw new NullReferenceException("The password has not been specififed for RabbitMQ"));
+                                               });
+                    cfg.UseDelayedMessageScheduler();
+
+                    cfg.ConfigureEndpoints(context);
                 });
+                foreach (var consumerItem in options.GetConsumersInfo())
+                {
+                    x.AddConsumer(consumerItem.consumerType, consumerItem.consumerDefenationType);
+                }
+
+
             });
 
             services.AddTransient<IEventPublisher, EventPublisher>();

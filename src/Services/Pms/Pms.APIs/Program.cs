@@ -16,7 +16,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
 //ServiceBus
-builder.Services.AddMassTransitConfig(builder.Configuration);
+builder.Services.AddMassTransitConfigAsync(builder.Configuration);
 
 var app = builder.Build();
 
