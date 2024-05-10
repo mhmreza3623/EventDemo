@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  pms.apis:
+    image: ${DOCKER_REGISTRY-}pmsapis
+    build:
+      context: .
+      dockerfile: src/Services/Pms.APIs/Dockerfile
+  
+  account.apis:
+    image: ${DOCKER_REGISTRY-}accountapis
+    build:
+      context: .
+      dockerfile: src/Services/Account.APIs/Dockerfile
+
+  massrabbit:
+    image: masstransit/rabbitmq 
+    ports:
+      - "15672:15672"

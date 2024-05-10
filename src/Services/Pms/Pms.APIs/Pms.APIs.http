@@ -1,0 +1,6 @@
+@Pms.APIs_HostAddress = http://localhost:5264
+
+GET {{Pms.APIs_HostAddress}}/Order/
+Accept: application/json
+
+###
