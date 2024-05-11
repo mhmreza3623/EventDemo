@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Sources\\EventDemo\\src\\Services\\Account\\Account.APIs\\Account.APIs.csproj": {}
+    "E:\\My-Repo\\EventDemo\\src\\Services\\Account\\Account.APIs\\Account.APIs.csproj": {}
   },
   "projects": {
-    "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj": {
+    "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj",
+        "projectUniqueName": "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj",
         "projectName": "Core.EventBus",
-        "projectPath": "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj",
-        "packagesPath": "C:\\Users\\SMT\\.nuget\\packages\\",
-        "outputPath": "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\obj\\",
+        "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj",
+        "packagesPath": "C:\\Users\\m.ramezani\\.nuget\\packages\\",
+        "outputPath": "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\SMT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\m.ramezani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,6 +27,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,7 +42,9 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "default"
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -61,24 +66,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj": {
+    "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj",
+        "projectUniqueName": "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj",
         "projectName": "Core.EventBus.Masstransit",
-        "projectPath": "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj",
-        "packagesPath": "C:\\Users\\SMT\\.nuget\\packages\\",
-        "outputPath": "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\obj\\",
+        "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj",
+        "packagesPath": "C:\\Users\\m.ramezani\\.nuget\\packages\\",
+        "outputPath": "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\SMT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\m.ramezani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,14 +93,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj": {
-                "projectPath": "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj"
+              "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj": {
+                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj"
               }
             }
           }
@@ -104,7 +112,9 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "default"
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -148,24 +158,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\Sources\\EventDemo\\src\\Services\\Account\\Account.APIs\\Account.APIs.csproj": {
+    "E:\\My-Repo\\EventDemo\\src\\Services\\Account\\Account.APIs\\Account.APIs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Sources\\EventDemo\\src\\Services\\Account\\Account.APIs\\Account.APIs.csproj",
+        "projectUniqueName": "E:\\My-Repo\\EventDemo\\src\\Services\\Account\\Account.APIs\\Account.APIs.csproj",
         "projectName": "Account.APIs",
-        "projectPath": "G:\\Sources\\EventDemo\\src\\Services\\Account\\Account.APIs\\Account.APIs.csproj",
-        "packagesPath": "C:\\Users\\SMT\\.nuget\\packages\\",
-        "outputPath": "G:\\Sources\\EventDemo\\src\\Services\\Account\\Account.APIs\\obj\\",
+        "projectPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Account\\Account.APIs\\Account.APIs.csproj",
+        "packagesPath": "C:\\Users\\m.ramezani\\.nuget\\packages\\",
+        "outputPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Account\\Account.APIs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\SMT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\m.ramezani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -173,17 +185,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj": {
-                "projectPath": "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj"
+              "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj": {
+                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj"
               },
-              "G:\\Sources\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj": {
-                "projectPath": "G:\\Sources\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj"
+              "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj": {
+                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj"
               }
             }
           }
@@ -194,7 +207,9 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "default"
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -241,24 +256,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\Sources\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj": {
+    "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Sources\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj",
+        "projectUniqueName": "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj",
         "projectName": "SharedModels",
-        "projectPath": "G:\\Sources\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj",
-        "packagesPath": "C:\\Users\\SMT\\.nuget\\packages\\",
-        "outputPath": "G:\\Sources\\EventDemo\\src\\Services\\Shared\\obj\\",
+        "projectPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj",
+        "packagesPath": "C:\\Users\\m.ramezani\\.nuget\\packages\\",
+        "outputPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\SMT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\m.ramezani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -266,14 +283,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj": {
-                "projectPath": "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj"
+              "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj": {
+                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj"
               }
             }
           }
@@ -284,7 +302,9 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "default"
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -320,7 +340,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

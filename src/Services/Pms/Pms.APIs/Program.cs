@@ -2,6 +2,7 @@ using Core.EventBus.Interfaces;
 using Core.EventBus.Masstransit;
 using SharedModels.PaymentEvents;
 using System.Reflection;
+using Pms.Infrastructure.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,10 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.Get
 
 //ServiceBus
 builder.Services.AddMassTransitConfigAsync(builder.Configuration);
+
+//DataBAse
+builder.Services.AddPersistentConfig(builder.Configuration);
+
 
 var app = builder.Build();
 

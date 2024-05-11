@@ -23,22 +23,9 @@ namespace Core.EventBus.Masstransit
                 x.SetKebabCaseEndpointNameFormatter();
                 x.UsingRabbitMq((context, cfg) =>
                 {
-                    //x.UsingRabbitMq((ctx, cfg) =>
-                    //{
-                    //    cfg.Host(config.RabbitMqHostName ?? throw new NullReferenceException("The host has not been specififed for RabbitMQ"), x =>
-                    //    {
-                    //        x.Username(config.RabbitMqUsername ?? throw new NullReferenceException("The username has not been specififed for RabbitMQ"));
-                    //        x.Password(config.RabbitMqPassword ?? throw new NullReferenceException("The password has not been specififed for RabbitMQ"));
-                    //    });
-
-                    //    cfg.ConfigureEndpoints(ctx);
-                    //});
-
                     cfg.AutoStart = true;
 
                     cfg.UseInstrumentation();
-
-                    //cfg.ApplyCustomBusConfiguration();
 
                     if (HostMetadataCache.IsRunningInContainer)
                         cfg.Host(config.RabbitMqHostName ?? throw new NullReferenceException("The host has not been specififed for RabbitMQ"), x =>

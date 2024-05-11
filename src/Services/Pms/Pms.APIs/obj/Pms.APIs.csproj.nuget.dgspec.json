@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Sources\\EventDemo\\src\\Services\\Pms\\Pms.APIs\\Pms.APIs.csproj": {}
+    "E:\\My-Repo\\EventDemo\\src\\Services\\Pms\\Pms.APIs\\Pms.APIs.csproj": {}
   },
   "projects": {
-    "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj": {
+    "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataBase.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj",
-        "projectName": "Core.EventBus",
-        "projectPath": "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj",
-        "packagesPath": "C:\\Users\\SMT\\.nuget\\packages\\",
-        "outputPath": "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\obj\\",
+        "projectUniqueName": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataBase.Core.csproj",
+        "projectName": "DataBase.Core",
+        "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataBase.Core.csproj",
+        "packagesPath": "C:\\Users\\m.ramezani\\.nuget\\packages\\",
+        "outputPath": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\SMT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\m.ramezani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,6 +27,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,7 +42,81 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "default"
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.25.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj",
+        "projectName": "Core.EventBus",
+        "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj",
+        "packagesPath": "C:\\Users\\m.ramezani\\.nuget\\packages\\",
+        "outputPath": "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\m.ramezani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -61,24 +138,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj": {
+    "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj",
+        "projectUniqueName": "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj",
         "projectName": "Core.EventBus.Masstransit",
-        "projectPath": "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj",
-        "packagesPath": "C:\\Users\\SMT\\.nuget\\packages\\",
-        "outputPath": "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\obj\\",
+        "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj",
+        "packagesPath": "C:\\Users\\m.ramezani\\.nuget\\packages\\",
+        "outputPath": "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\SMT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\m.ramezani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,14 +165,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj": {
-                "projectPath": "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj"
+              "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj": {
+                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj"
               }
             }
           }
@@ -104,7 +184,9 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "default"
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -148,24 +230,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\Sources\\EventDemo\\src\\Services\\Pms\\Pms.APIs\\Pms.APIs.csproj": {
+    "E:\\My-Repo\\EventDemo\\src\\Services\\Pms\\Pms.APIs\\Pms.APIs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Sources\\EventDemo\\src\\Services\\Pms\\Pms.APIs\\Pms.APIs.csproj",
+        "projectUniqueName": "E:\\My-Repo\\EventDemo\\src\\Services\\Pms\\Pms.APIs\\Pms.APIs.csproj",
         "projectName": "Pms.APIs",
-        "projectPath": "G:\\Sources\\EventDemo\\src\\Services\\Pms\\Pms.APIs\\Pms.APIs.csproj",
-        "packagesPath": "C:\\Users\\SMT\\.nuget\\packages\\",
-        "outputPath": "G:\\Sources\\EventDemo\\src\\Services\\Pms\\Pms.APIs\\obj\\",
+        "projectPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Pms\\Pms.APIs\\Pms.APIs.csproj",
+        "packagesPath": "C:\\Users\\m.ramezani\\.nuget\\packages\\",
+        "outputPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Pms\\Pms.APIs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\SMT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\m.ramezani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -173,17 +257,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj": {
-                "projectPath": "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj"
+              "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj": {
+                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj"
               },
-              "G:\\Sources\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj": {
-                "projectPath": "G:\\Sources\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj"
+              "E:\\My-Repo\\EventDemo\\src\\Services\\Pms\\Pms.Infrastructure\\Pms.Infrastructure.csproj": {
+                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Pms\\Pms.Infrastructure\\Pms.Infrastructure.csproj"
+              },
+              "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj": {
+                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj"
               }
             }
           }
@@ -194,7 +282,9 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "default"
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -245,24 +335,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\Sources\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj": {
+    "E:\\My-Repo\\EventDemo\\src\\Services\\Pms\\Pms.Infrastructure\\Pms.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Sources\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj",
-        "projectName": "SharedModels",
-        "projectPath": "G:\\Sources\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj",
-        "packagesPath": "C:\\Users\\SMT\\.nuget\\packages\\",
-        "outputPath": "G:\\Sources\\EventDemo\\src\\Services\\Shared\\obj\\",
+        "projectUniqueName": "E:\\My-Repo\\EventDemo\\src\\Services\\Pms\\Pms.Infrastructure\\Pms.Infrastructure.csproj",
+        "projectName": "Pms.Infrastructure",
+        "projectPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Pms\\Pms.Infrastructure\\Pms.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\m.ramezani\\.nuget\\packages\\",
+        "outputPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Pms\\Pms.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\SMT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\m.ramezani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -270,14 +362,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj": {
-                "projectPath": "G:\\Sources\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj"
+              "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataBase.Core.csproj": {
+                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataBase.Core.csproj"
               }
             }
           }
@@ -288,7 +381,115 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "default"
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.25.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.25.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj",
+        "projectName": "SharedModels",
+        "projectPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj",
+        "packagesPath": "C:\\Users\\m.ramezani\\.nuget\\packages\\",
+        "outputPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\m.ramezani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj": {
+                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -324,7 +525,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

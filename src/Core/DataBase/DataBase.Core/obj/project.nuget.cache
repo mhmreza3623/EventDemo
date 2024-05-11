@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Co2xCcsZDuwg3DnyY1QpmO9fjkG3FCRSLdideJHfkvb/ynuLmf1y7zSx9c109maKn4v5ZF6q+M6J7Qor4JYUAQ==",
+  "success": true,
+  "projectFilePath": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataBase.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\m.ramezani\\.nuget\\packages\\mongodb.bson\\2.25.0\\mongodb.bson.2.25.0.nupkg.sha512",
+    "C:\\Users\\m.ramezani\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\m.ramezani\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
