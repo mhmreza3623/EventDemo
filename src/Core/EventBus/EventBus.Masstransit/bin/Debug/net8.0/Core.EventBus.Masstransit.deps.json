@@ -13,7 +13,8 @@
           "MassTransit.RabbitMQ": "8.2.2",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0"
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0",
+          "SharedModels": "1.0.0"
         },
         "runtime": {
           "Core.EventBus.Masstransit.dll": {}
@@ -248,6 +249,18 @@
         "runtime": {
           "Core.EventBus.dll": {}
         }
+      },
+      "SharedModels/1.0.0": {
+        "dependencies": {
+          "Core.EventBus": "1.0.0",
+          "MassTransit.Abstractions": "8.2.2",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0"
+        },
+        "runtime": {
+          "SharedModels.dll": {}
+        }
       }
     }
   },
@@ -412,6 +425,11 @@
       "hashPath": "system.threading.channels.7.0.0.nupkg.sha512"
     },
     "Core.EventBus/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SharedModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

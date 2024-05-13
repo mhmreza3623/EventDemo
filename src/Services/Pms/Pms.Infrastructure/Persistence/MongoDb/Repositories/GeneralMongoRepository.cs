@@ -1,51 +1,66 @@
-﻿using System.Linq.Expressions;
+﻿using System;
+using System.Collections.Immutable;
+using System.Linq.Expressions;
 using DataBase.Core;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using Pms.Domain.Repositories;
 
 namespace Pms.Infrastructure.Persistence.MongoDb.Repositories;
 
-public class GeneralMongoRepository<TEntity> : IGeneralMongoRepository<TEntity> where TEntity : BaseCollection
+public class GeneralMongoRepository<TEntity> : IGeneralMongoRepository<TEntity>
+    where TEntity : MongoBaseEntity
 {
-    private readonly IMongoCollection<TEntity> _booksCollection;
+    private readonly IMongoCollection<TEntity> _paymentCollection;
 
     public GeneralMongoRepository(IOptions<MongodbConfig> paymentDatabase)
     {
         var mongoClient = new MongoClient(paymentDatabase.Value.ConnectionString);
         var mongoDatabase = mongoClient.GetDatabase(paymentDatabase.Value.DatabaseName);
-        _booksCollection = mongoDatabase.GetCollection<TEntity>(paymentDatabase.Value.BooksCollectionName);
+        _paymentCollection = mongoDatabase.GetCollection<TEntity>(typeof(TEntity).Name);
     }
 
     public async Task<bool> InsertAsync(TEntity entity)
     {
-        await _booksCollection.InsertOneAsync(entity);
+        await _paymentCollection.InsertOneAsync(entity);
         return true;
     }
 
     public async Task<bool> UpdateAsync(TEntity entity)
     {
-        await _booksCollection.ReplaceOneAsync(x => x.Id == entity.Id, entity);
+        await _paymentCollection.ReplaceOneAsync(x => x.Id == entity.Id, entity);
         return true;
     }
 
     public async Task<bool> Delete(TEntity entity)
     {
-        await _booksCollection.DeleteOneAsync(x => x.Id == entity.Id);
+        await _paymentCollection.DeleteOneAsync(x => x.Id == entity.Id);
         return true;
     }
 
-    public async Task<IList<TEntity>> SearchFor(Expression<Func<TEntity, bool>> predicate)
+    public async Task<IList<TEntity>> SearchFor(Predicate<TEntity> predicate)
     {
-        return await _booksCollection.Find(predicate).ToListAsync();
+        var isDeletedFilter = Builders<TEntity>.Filter.Where(p => !p.IsDeleted);
+        var filter = Builders<TEntity>.Filter.And(isDeletedFilter);
+        var availableData = _paymentCollection.Find(filter).ToList();
+        return availableData.FindAll(predicate).ToList();
     }
 
     public async Task<IList<TEntity>> GetAll()
     {
-        return await _booksCollection.FindAsync();
+        var isDeletedFilter = Builders<TEntity>.Filter.Where(p => !p.IsDeleted);
+        var filter = Builders<TEntity>.Filter.And(isDeletedFilter);
+        var availableData = _paymentCollection.Find(filter).ToList();
+
+        return availableData.ToImmutableList();
     }
 
-    public TEntity GetById(Guid id)
+    public TEntity? GetById(string id)
     {
-        return await _booksCollection.Find(q=>q.Id==id);
+        var isDeletedFilter = Builders<TEntity>.Filter.Where(p => !p.IsDeleted);
+        var filter = Builders<TEntity>.Filter.And(isDeletedFilter);
+        var availableData = _paymentCollection.Find(filter).ToList();
+
+        return availableData.Find(q => q.Id == id);
     }
 }

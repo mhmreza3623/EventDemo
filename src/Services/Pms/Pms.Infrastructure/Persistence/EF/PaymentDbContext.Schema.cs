@@ -12,6 +12,11 @@ namespace Pms.Infrastructure.Persistence.EF
         {
             public const string SchemaName = "Payment";
 
+            public const string TransactionTableName = "Transactions";
+            public const string TransactionDetailsTableName = "TransactionDetails";
+            public const string ClientTableName = "Clients";
+            public const string AccountTableName = "Accounts";
+
         }
     }
 }

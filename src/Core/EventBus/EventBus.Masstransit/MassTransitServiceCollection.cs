@@ -3,11 +3,48 @@ using MassTransit;
 using MassTransit.Metadata;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using SharedModels.TransactionEvents.Handlers;
+using SharedModels.TransactionEvents.Integeration;
 
 namespace Core.EventBus.Masstransit
 {
     public static class MassTransitServiceCollection
     {
+        public static void AddMassTransitConsumers(this IServiceCollection services, IConfiguration configuration)
+        {
+            var config = new MassTransitConfiguration();
+            configuration.GetSection(MassTransitConfiguration.SectionName).Bind(config);
+
+            services.AddMassTransit(x =>
+            {
+                x.SetKebabCaseEndpointNameFormatter();
+                x.AddConsumer<TransactionCreatedHandler>();
+                x.AddConsumer<PaymentCreatedHandler>();
+
+
+                x.UsingRabbitMq((context, cfg) =>
+                {
+                    cfg.AutoStart = true;
+
+                    cfg.UseInstrumentation();
+
+                    if (HostMetadataCache.IsRunningInContainer)
+                        cfg.Host(config.RabbitMqHostName ?? throw new NullReferenceException("The host has not been specififed for RabbitMQ"), x =>
+                        {
+                            x.Username(config.RabbitMqUsername ?? throw new NullReferenceException("The username has not been specififed for RabbitMQ"));
+                            x.Password(config.RabbitMqPassword ?? throw new NullReferenceException("The password has not been specififed for RabbitMQ"));
+                        });
+                    cfg.UseDelayedMessageScheduler();
+
+                    cfg.ConfigureEndpoints(context);
+                });
+               
+
+            });
+
+            services.AddTransient<IEventPublisher, EventPublisher>();
+            services.Configure<MassTransitConfiguration>(configuration.GetSection(MassTransitConfiguration.SectionName));
+        }
         public static void AddMassTransitConfigAsync(this IServiceCollection services, IConfiguration configuration, Action<MassTransitEventBusOptions>? setupAction = null)
         {
             var options = new MassTransitEventBusOptions();
@@ -16,7 +53,6 @@ namespace Core.EventBus.Masstransit
 
             var config = new MassTransitConfiguration();
             configuration.GetSection(MassTransitConfiguration.SectionName).Bind(config);
-
 
             services.AddMassTransit(x =>
             {
@@ -41,7 +77,6 @@ namespace Core.EventBus.Masstransit
                 {
                     x.AddConsumer(consumerItem.consumerType, consumerItem.consumerDefenationType);
                 }
-
 
             });
 

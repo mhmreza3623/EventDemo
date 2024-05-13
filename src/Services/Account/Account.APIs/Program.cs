@@ -1,8 +1,10 @@
 using Account.APIs.App.EventHandlers.IntegrationEvents;
 using Core.EventBus.Handlers;
 using Core.EventBus.Masstransit;
-using SharedModels.PaymentEvents;
 using System.Reflection;
+using Pms.Infrastructure.Persistence.EF;
+using Pms.Infrastructure.Persistence.MongoDb;
+using SharedModels.TransactionEvents.Integeration;
 
 namespace Account.APIs
 {
@@ -11,6 +13,11 @@ namespace Account.APIs
         public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            //DataBases
+            builder.Services.AddEFConfig(builder.Configuration);
+            builder.Services.AddMongodbConfig(builder.Configuration);
+
 
             // Add services to the container.
 
@@ -23,10 +30,12 @@ namespace Account.APIs
             builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
             //ServiceBus
-            builder.Services.AddMassTransitConfigAsync(builder.Configuration, o =>
-            {
-                o.AddHandler<PaymentCreated, PaymentCreatedHandler>();
-            });
+            //builder.Services.AddMassTransitConfigAsync(builder.Configuration, o =>
+            //{
+            //    o.AddHandler<TransactionCreated, PaymentCreatedHandler>();
+            //});
+
+ builder.Services.AddMassTransitConsumers(builder.Configuration);
 
 
             var app = builder.Build();

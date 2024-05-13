@@ -1,8 +1,9 @@
 using Core.EventBus.Interfaces;
 using Core.EventBus.Masstransit;
-using SharedModels.PaymentEvents;
 using System.Reflection;
-using Pms.Infrastructure.Persistence;
+using Pms.Infrastructure.Persistence.EF;
+using Pms.Infrastructure.Persistence.MongoDb;
+using Pms.Application.Commands;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,14 +14,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//DataBases
+builder.Services.AddEFConfig(builder.Configuration);
+builder.Services.AddMongodbConfig(builder.Configuration);
+
 //mediatR
-builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining(typeof(CreateTransactionCommand)));
+
 
 //ServiceBus
 builder.Services.AddMassTransitConfigAsync(builder.Configuration);
-
-//DataBAse
-builder.Services.AddPersistentConfig(builder.Configuration);
 
 
 var app = builder.Build();

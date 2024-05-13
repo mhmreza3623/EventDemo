@@ -30,3 +30,5 @@ E:\My-Repo\EventDemo\src\Core\EventBus\EventBus.Masstransit\obj\Debug\net8.0\Cor
 E:\My-Repo\EventDemo\src\Core\EventBus\EventBus.Masstransit\obj\Debug\net8.0\refint\Core.EventBus.Masstransit.dll
 E:\My-Repo\EventDemo\src\Core\EventBus\EventBus.Masstransit\obj\Debug\net8.0\Core.EventBus.Masstransit.pdb
 E:\My-Repo\EventDemo\src\Core\EventBus\EventBus.Masstransit\obj\Debug\net8.0\ref\Core.EventBus.Masstransit.dll
+E:\My-Repo\EventDemo\src\Core\EventBus\EventBus.Masstransit\bin\Debug\net8.0\SharedModels.dll
+E:\My-Repo\EventDemo\src\Core\EventBus\EventBus.Masstransit\bin\Debug\net8.0\SharedModels.pdb

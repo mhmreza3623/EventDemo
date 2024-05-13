@@ -2,9 +2,9 @@
 {
     public class IntegrationEvent : Event
     {
-        public IntegrationEvent(Guid tenantId)
+        public IntegrationEvent(Guid clientId)
         {
-            this.TenantId = tenantId;
+            this.TenantId = clientId;
         }
         public override string EventName
         {

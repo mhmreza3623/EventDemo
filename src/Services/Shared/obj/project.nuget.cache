@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "w9SYD88CzIDaM0i9qahrXp9ZsBmBwfK82n5GDQnV3fCtC0CLIBmmYXJufDVNQBRTjA+8+P784IEiLR8PwN3p7w==",
+  "dgSpecHash": "LAgy9AEW047KMoDPz+d68pEWqLrmaRmEia0NkULlCXXWB2VxT8EZL0U4GKYF3+3C0sfGB1sGSyFY3vSBsUzt0w==",
   "success": true,
   "projectFilePath": "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\m.ramezani\\.nuget\\packages\\masstransit.abstractions\\8.2.2\\masstransit.abstractions.8.2.2.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.0\\microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",

@@ -2,26 +2,26 @@
 using Core.EventBus.Masstransit;
 using MassTransit;
 using Newtonsoft.Json;
-using SharedModels.PaymentEvents;
+using SharedModels.TransactionEvents.Integeration;
 
 namespace Account.APIs.App.EventHandlers.IntegrationEvents
 {
-    public class PaymentCreatedHandler : IIntegrationEventHandler<PaymentCreated>
+    public class PaymentCreatedHandler : IIntegrationEventHandler<TransactionCreated>
     {
-        public Task Handle(PaymentCreated evt)
+        public Task Handle(TransactionCreated evt)
         {
             throw new NotImplementedException();
         }
     }
 
-    //public class PaymentCreatedHandler : IConsumer<PaymentCreated>
+    //public class PaymentCreatedHandler : IConsumer<TransactionCreated>
     //{
-    //    public Task Consume(ConsumeContext<PaymentCreated> context)
+    //    public Task Consume(ConsumeContext<TransactionCreated> context)
     //    {
     //        throw new NotImplementedException();
     //    }
 
-    //    //public Task Handle(PaymentCreated evt)
+    //    //public Task Handle(TransactionCreated evt)
     //    //{
     //    //    throw new NotImplementedException();
     //    //}

@@ -1,0 +1,16 @@
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\bin\Debug\net8.0\Pms.Domain.deps.json
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\bin\Debug\net8.0\Pms.Domain.dll
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\bin\Debug\net8.0\Pms.Domain.pdb
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\obj\Debug\net8.0\Pms.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\obj\Debug\net8.0\Pms.Domain.AssemblyInfoInputs.cache
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\obj\Debug\net8.0\Pms.Domain.AssemblyInfo.cs
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\obj\Debug\net8.0\Pms.Domain.csproj.CoreCompileInputs.cache
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\obj\Debug\net8.0\Pms.Domain.sourcelink.json
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\obj\Debug\net8.0\Pms.Domain.dll
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\obj\Debug\net8.0\refint\Pms.Domain.dll
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\obj\Debug\net8.0\Pms.Domain.pdb
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\obj\Debug\net8.0\ref\Pms.Domain.dll
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\bin\Debug\net8.0\DataBase.Core.dll
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\bin\Debug\net8.0\DataBase.Core.pdb
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\obj\Debug\net8.0\Pms.Domain.csproj.AssemblyReference.cache
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\obj\Debug\net8.0\Pms.Domain.csproj.Up2Date

@@ -13,6 +13,11 @@
   <ItemGroup>
 	  <PackageReference Include="MediatR" Version="12.2.0" />
 	  <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
 	  
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
@@ -23,6 +28,8 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\Core\EventBus\EventBus.Masstransit\Core.EventBus.Masstransit.csproj" />
     <ProjectReference Include="..\..\Shared\SharedModels.csproj" />
+    <ProjectReference Include="..\Pms.Application\Pms.Application.csproj" />
+    <ProjectReference Include="..\Pms.Domain\Pms.Domain.csproj" />
     <ProjectReference Include="..\Pms.Infrastructure\Pms.Infrastructure.csproj" />
   </ItemGroup>
 
