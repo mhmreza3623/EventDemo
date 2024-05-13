@@ -1,6 +1,6 @@
 ﻿using Core.EventBus.Events;
 
-namespace SharedModels.TransactionEvents.Integeration
+namespace SharedModels.TransactionIntegrationEvents
 {
     public class TransactionCreated : IntegrationEvent
     {

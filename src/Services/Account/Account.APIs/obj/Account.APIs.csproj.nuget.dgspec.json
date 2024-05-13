@@ -174,9 +174,6 @@
             "projectReferences": {
               "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj": {
                 "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj"
-              },
-              "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj": {
-                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj"
               }
             }
           }
@@ -561,6 +558,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataBase.Core.csproj": {
+                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataBase.Core.csproj"
+              },
               "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj": {
                 "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Base\\Core.EventBus.csproj"
               }

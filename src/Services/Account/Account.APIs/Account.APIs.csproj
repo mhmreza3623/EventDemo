@@ -23,7 +23,6 @@
 		<Folder Include="App\Core\Models\" />
 		<Folder Include="App\Core\" />
 		<Folder Include="App\Api\" />
-		<Folder Include="App\EventHandlers\DomainEvents\" />
 	</ItemGroup>
 
 	<ItemGroup>

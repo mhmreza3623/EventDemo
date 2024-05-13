@@ -23,7 +23,8 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining(ty
 
 
 //ServiceBus
-builder.Services.AddMassTransitConfigAsync(builder.Configuration);
+//builder.Services.AddMassTransitConfigAsync(builder.Configuration);
+builder.Services.AddMassTransitConsumers(builder.Configuration);
 
 
 var app = builder.Build();

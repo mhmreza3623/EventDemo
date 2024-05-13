@@ -15,7 +15,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\..\Services\Shared\SharedModels.csproj" />
 		<ProjectReference Include="..\EventBus.Base\Core.EventBus.csproj" />
 	</ItemGroup>
 

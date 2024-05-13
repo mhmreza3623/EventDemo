@@ -14,11 +14,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\..\Core\DataBase\DataBase.Core\DataBase.Core.csproj" />
 	  <ProjectReference Include="..\..\Core\EventBus\EventBus.Base\Core.EventBus.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="TransactionEvents\Domain\" />
 	</ItemGroup>
 
 </Project>
