@@ -28,7 +28,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Core\DataBase\DataBase.Core\DataBase.Core.csproj" />
+    <ProjectReference Include="..\..\..\Core\Logging\Logging.Core\Logging.Core.csproj" />
     <ProjectReference Include="..\Pms.Domain\Pms.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Persistence\EF\EntitiesConfigurations\Log\" />
   </ItemGroup>
 
 </Project>

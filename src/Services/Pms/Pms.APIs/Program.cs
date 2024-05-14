@@ -1,6 +1,5 @@
-using Core.EventBus.Interfaces;
 using Core.EventBus.Masstransit;
-using System.Reflection;
+using Logging.Core.Serilog;
 using Pms.Infrastructure.Persistence.EF;
 using Pms.Infrastructure.Persistence.MongoDb;
 using Pms.Application.Commands;
@@ -13,6 +12,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+//serilog
+builder.AddSerilogConfig(builder.Configuration);
 
 //DataBases
 builder.Services.AddEFConfig(builder.Configuration);

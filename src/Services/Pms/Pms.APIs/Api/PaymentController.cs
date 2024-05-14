@@ -10,15 +10,19 @@ namespace Pms.APIs.Api
     public class PaymentController : ControllerBase
     {
         private readonly IMediator _mediator;
+        private readonly ILogger<PaymentController> _logger;
 
-        public PaymentController(IMediator mediator)
+        public PaymentController(IMediator mediator, ILogger<PaymentController> logger)
         {
             _mediator = mediator;
+            _logger = logger;
         }
 
         [HttpPost]
         public async Task<IActionResult> CreateOrder(TransactionDto request)
         {
+            _logger.LogInformation("Seri Log is Working");
+
             await _mediator.Send(new CreateTransactionCommand(request.Source,request.Distination,request.Amount));
             return Ok();
         }

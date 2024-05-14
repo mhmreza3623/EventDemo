@@ -42,3 +42,5 @@ E:\My-Repo\EventDemo\src\Services\Shared\obj\Debug\net8.0\SharedModels.dll
 E:\My-Repo\EventDemo\src\Services\Shared\obj\Debug\net8.0\refint\SharedModels.dll
 E:\My-Repo\EventDemo\src\Services\Shared\obj\Debug\net8.0\SharedModels.pdb
 E:\My-Repo\EventDemo\src\Services\Shared\obj\Debug\net8.0\ref\SharedModels.dll
+E:\My-Repo\EventDemo\src\Services\Shared\bin\Debug\net8.0\DataBase.Core.dll
+E:\My-Repo\EventDemo\src\Services\Shared\bin\Debug\net8.0\DataBase.Core.pdb

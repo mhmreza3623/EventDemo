@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Pms.Infrastructure.Persistence.EF;
+using Pms.Infrastructure.Persistence.EF.DbContexts;
 
 #nullable disable
 
