@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\DataBase\DataBase.Core\DataBase.Core.csproj" />
+    <ProjectReference Include="..\..\DataBase\DataBase.Core\DataModels.Core.csproj" />
   </ItemGroup>
 
 </Project>

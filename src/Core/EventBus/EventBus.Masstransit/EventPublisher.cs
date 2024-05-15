@@ -8,7 +8,7 @@ namespace Core.EventBus.Masstransit
     public class EventPublisher : IEventPublisher
     {
         readonly IPublishEndpoint _publishEndpoint;
-        readonly ILogger<EventPublisher> _logger;
+        readonly ILogger<EventPublisher> _logger;   
         public EventPublisher(IPublishEndpoint publishEndpoint, IBusControl busControl, IServiceProvider serviceProvider, ILogger<EventPublisher> logger)
         {
             _publishEndpoint = publishEndpoint;

@@ -2117,24 +2117,24 @@
           "lib/net7.0/ZstdSharp.dll": {}
         }
       },
-      "DataBase.Core/1.0.0": {
+      "DataModels.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "MongoDB.Bson": "2.25.0"
         },
         "compile": {
-          "bin/placeholder/DataBase.Core.dll": {}
+          "bin/placeholder/DataModels.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DataBase.Core.dll": {}
+          "bin/placeholder/DataModels.Core.dll": {}
         }
       },
       "Logging.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "DataBase.Core": "1.0.0",
+          "DataModels.Core": "1.0.0",
           "Serilog.AspNetCore": "8.0.1",
           "Serilog.Sinks.Console": "5.0.1",
           "Serilog.Sinks.File": "5.0.0",
@@ -2152,7 +2152,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "DataBase.Core": "1.0.0"
+          "DataModels.Core": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Pms.Domain.dll": {}
@@ -5596,10 +5596,10 @@
         "zstdsharp.port.nuspec"
       ]
     },
-    "DataBase.Core/1.0.0": {
+    "DataModels.Core/1.0.0": {
       "type": "project",
-      "path": "../../../Core/DataBase/DataBase.Core/DataBase.Core.csproj",
-      "msbuildProject": "../../../Core/DataBase/DataBase.Core/DataBase.Core.csproj"
+      "path": "../../../Core/DataBase/DataBase.Core/DataModels.Core.csproj",
+      "msbuildProject": "../../../Core/DataBase/DataBase.Core/DataModels.Core.csproj"
     },
     "Logging.Core/1.0.0": {
       "type": "project",
@@ -5614,7 +5614,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "DataBase.Core >= 1.0.0",
+      "DataModels.Core >= 1.0.0",
       "Logging.Core >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.4",
       "Microsoft.EntityFrameworkCore >= 8.0.4",
@@ -5664,8 +5664,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataBase.Core.csproj": {
-              "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataBase.Core.csproj"
+            "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataModels.Core.csproj": {
+              "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataModels.Core.csproj"
             },
             "E:\\My-Repo\\EventDemo\\src\\Core\\Logging\\Logging.Core\\Logging.Core.csproj": {
               "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\Logging\\Logging.Core\\Logging.Core.csproj"

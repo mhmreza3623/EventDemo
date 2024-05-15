@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RSmClBTuRWJW9vJA7msUo23Avu5qSkoea69x7P+5FjBlTb15PRMdxwlz0X99qpZ4ZzlEtl1UUMyfzdTTSh6/Cg==",
+  "dgSpecHash": "vM76G5HswnCq/eT2tEelpkqbrwnAK3y/3zHzVsx3ic0f4Of73jSiqsp66TB8tYJem3n05I0J766ZA+Rsg8947Q==",
   "success": true,
   "projectFilePath": "E:\\My-Repo\\EventDemo\\src\\Core\\EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\m.ramezani\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\8.0.0\\microsoft.extensions.options.configurationextensions.8.0.0.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",
+    "C:\\Users\\m.ramezani\\.nuget\\packages\\serilog\\3.1.1\\serilog.3.1.1.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"

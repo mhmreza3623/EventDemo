@@ -263,6 +263,39 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/8.0.4": {
         "type": "package",
         "dependencies": {
@@ -1436,6 +1469,19 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "RabbitMQ.Client/6.8.1": {
         "type": "package",
         "dependencies": {
@@ -2397,7 +2443,8 @@
           "MassTransit.RabbitMQ": "8.2.2",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0"
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0",
+          "Serilog": "3.1.1"
         },
         "compile": {
           "bin/placeholder/Core.EventBus.Masstransit.dll": {}
@@ -2406,24 +2453,24 @@
           "bin/placeholder/Core.EventBus.Masstransit.dll": {}
         }
       },
-      "DataBase.Core/1.0.0": {
+      "DataModels.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "MongoDB.Bson": "2.25.0"
         },
         "compile": {
-          "bin/placeholder/DataBase.Core.dll": {}
+          "bin/placeholder/DataModels.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DataBase.Core.dll": {}
+          "bin/placeholder/DataModels.Core.dll": {}
         }
       },
       "Logging.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "DataBase.Core": "1.0.0",
+          "DataModels.Core": "1.0.0",
           "Serilog.AspNetCore": "8.0.1",
           "Serilog.Sinks.Console": "5.0.1",
           "Serilog.Sinks.File": "5.0.0",
@@ -2458,7 +2505,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "DataBase.Core": "1.0.0"
+          "DataModels.Core": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Pms.Domain.dll": {}
@@ -2471,7 +2518,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "DataBase.Core": "1.0.0",
+          "DataModels.Core": "1.0.0",
           "Logging.Core": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.4",
           "Microsoft.EntityFrameworkCore": "8.0.4",
@@ -2490,12 +2537,27 @@
           "bin/placeholder/Pms.Infrastructure.dll": {}
         }
       },
+      "Shared.AuditLog/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "DataModels.Core": "1.0.0",
+          "Logging.Core": "1.0.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "bin/placeholder/Shared.AuditLog.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.AuditLog.dll": {}
+        }
+      },
       "SharedModels/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Core.EventBus": "1.0.0",
-          "DataBase.Core": "1.0.0",
           "MassTransit.Abstractions": "8.2.2",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
@@ -2817,6 +2879,32 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.xml",
         "microsoft.aspnetcore.cryptography.keyderivation.8.0.4.nupkg.sha512",
         "microsoft.aspnetcore.cryptography.keyderivation.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+      "sha512": "Nxs7Z1q3f1STfLYKJSVXCs1iBl+Ya6E8o4Oy1bCxJ/rNI44E/0f6tbsrVqAWfB7jlnJfyaAtIalBVxPKUPQb4Q==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.xml",
+        "microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Features/2.2.0": {
+      "sha512": "ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.features/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
+        "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.features.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/8.0.4": {
@@ -4878,6 +4966,36 @@
         "mono.texttemplating.nuspec"
       ]
     },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "RabbitMQ.Client/6.8.1": {
       "sha512": "jNsmGgmCNw2S/NzskeN2ijtGywtH4Sk/G6jWUTD5sY9SrC27Xz6BsLIiB8hdsfjeyWCa4j4GvCIGkpE8wrjU1Q==",
       "type": "package",
@@ -6528,10 +6646,10 @@
       "path": "../../../Core/EventBus/EventBus.Masstransit/Core.EventBus.Masstransit.csproj",
       "msbuildProject": "../../../Core/EventBus/EventBus.Masstransit/Core.EventBus.Masstransit.csproj"
     },
-    "DataBase.Core/1.0.0": {
+    "DataModels.Core/1.0.0": {
       "type": "project",
-      "path": "../../../Core/DataBase/DataBase.Core/DataBase.Core.csproj",
-      "msbuildProject": "../../../Core/DataBase/DataBase.Core/DataBase.Core.csproj"
+      "path": "../../../Core/DataBase/DataBase.Core/DataModels.Core.csproj",
+      "msbuildProject": "../../../Core/DataBase/DataBase.Core/DataModels.Core.csproj"
     },
     "Logging.Core/1.0.0": {
       "type": "project",
@@ -6553,10 +6671,15 @@
       "path": "../Pms.Infrastructure/Pms.Infrastructure.csproj",
       "msbuildProject": "../Pms.Infrastructure/Pms.Infrastructure.csproj"
     },
+    "Shared.AuditLog/1.0.0": {
+      "type": "project",
+      "path": "../../Shared/Shared.AuditLog/Shared.AuditLog.csproj",
+      "msbuildProject": "../../Shared/Shared.AuditLog/Shared.AuditLog.csproj"
+    },
     "SharedModels/1.0.0": {
       "type": "project",
-      "path": "../../Shared/SharedModels.csproj",
-      "msbuildProject": "../../Shared/SharedModels.csproj"
+      "path": "../../Shared/TransactionIntegrationEvents/SharedModels.csproj",
+      "msbuildProject": "../../Shared/TransactionIntegrationEvents/SharedModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6573,7 +6696,7 @@
       "Pms.Application >= 1.0.0",
       "Pms.Domain >= 1.0.0",
       "Pms.Infrastructure >= 1.0.0",
-      "SharedModels >= 1.0.0",
+      "Shared.AuditLog >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -6627,8 +6750,8 @@
             "E:\\My-Repo\\EventDemo\\src\\Services\\Pms\\Pms.Infrastructure\\Pms.Infrastructure.csproj": {
               "projectPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Pms\\Pms.Infrastructure\\Pms.Infrastructure.csproj"
             },
-            "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj": {
-              "projectPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\SharedModels.csproj"
+            "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\Shared.AuditLog\\Shared.AuditLog.csproj": {
+              "projectPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\Shared.AuditLog\\Shared.AuditLog.csproj"
             }
           }
         }

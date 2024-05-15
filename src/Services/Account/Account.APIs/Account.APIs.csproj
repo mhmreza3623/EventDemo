@@ -28,7 +28,8 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\..\..\Core\EventBus\EventBus.Masstransit\Core.EventBus.Masstransit.csproj" />
 	  <ProjectReference Include="..\..\Pms\Pms.Infrastructure\Pms.Infrastructure.csproj" />
-	  <ProjectReference Include="..\..\Shared\SharedModels.csproj" />
+	  <ProjectReference Include="..\..\Shared\Shared.AuditLog\Shared.AuditLog.csproj" />
+	  <ProjectReference Include="..\..\Shared\TransactionIntegrationEvents\SharedModels.csproj" />
 	</ItemGroup>
 
 </Project>

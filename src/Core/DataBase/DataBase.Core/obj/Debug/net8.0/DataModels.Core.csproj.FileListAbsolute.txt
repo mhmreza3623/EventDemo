@@ -1,0 +1,13 @@
+E:\My-Repo\EventDemo\src\Core\DataBase\DataBase.Core\bin\Debug\net8.0\DataModels.Core.deps.json
+E:\My-Repo\EventDemo\src\Core\DataBase\DataBase.Core\bin\Debug\net8.0\DataModels.Core.dll
+E:\My-Repo\EventDemo\src\Core\DataBase\DataBase.Core\bin\Debug\net8.0\DataModels.Core.pdb
+E:\My-Repo\EventDemo\src\Core\DataBase\DataBase.Core\obj\Debug\net8.0\DataModels.Core.csproj.AssemblyReference.cache
+E:\My-Repo\EventDemo\src\Core\DataBase\DataBase.Core\obj\Debug\net8.0\DataModels.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\My-Repo\EventDemo\src\Core\DataBase\DataBase.Core\obj\Debug\net8.0\DataModels.Core.AssemblyInfoInputs.cache
+E:\My-Repo\EventDemo\src\Core\DataBase\DataBase.Core\obj\Debug\net8.0\DataModels.Core.AssemblyInfo.cs
+E:\My-Repo\EventDemo\src\Core\DataBase\DataBase.Core\obj\Debug\net8.0\DataModels.Core.csproj.CoreCompileInputs.cache
+E:\My-Repo\EventDemo\src\Core\DataBase\DataBase.Core\obj\Debug\net8.0\DataModels.Core.sourcelink.json
+E:\My-Repo\EventDemo\src\Core\DataBase\DataBase.Core\obj\Debug\net8.0\DataModels.Core.dll
+E:\My-Repo\EventDemo\src\Core\DataBase\DataBase.Core\obj\Debug\net8.0\refint\DataModels.Core.dll
+E:\My-Repo\EventDemo\src\Core\DataBase\DataBase.Core\obj\Debug\net8.0\DataModels.Core.pdb
+E:\My-Repo\EventDemo\src\Core\DataBase\DataBase.Core\obj\Debug\net8.0\ref\DataModels.Core.dll

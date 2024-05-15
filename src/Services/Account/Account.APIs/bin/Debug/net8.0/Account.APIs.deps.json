@@ -15,6 +15,7 @@
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.19.4",
           "Newtonsoft.Json": "13.0.3",
           "Pms.Infrastructure": "1.0.0",
+          "Shared.AuditLog": "1.0.0",
           "SharedModels": "1.0.0",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
@@ -197,6 +198,17 @@
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.424.17014"
           }
+        }
+      },
+      "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "System.Text.Encodings.Web": "8.0.0"
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/2.2.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0"
         }
       },
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/8.0.4": {
@@ -1091,23 +1103,24 @@
           "MassTransit.RabbitMQ": "8.2.2",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0"
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0",
+          "Serilog": "3.1.1"
         },
         "runtime": {
           "Core.EventBus.Masstransit.dll": {}
         }
       },
-      "DataBase.Core/1.0.0": {
+      "DataModels.Core/1.0.0": {
         "dependencies": {
           "MongoDB.Bson": "2.25.0"
         },
         "runtime": {
-          "DataBase.Core.dll": {}
+          "DataModels.Core.dll": {}
         }
       },
       "Logging.Core/1.0.0": {
         "dependencies": {
-          "DataBase.Core": "1.0.0",
+          "DataModels.Core": "1.0.0",
           "Serilog.AspNetCore": "8.0.1",
           "Serilog.Sinks.Console": "5.0.1",
           "Serilog.Sinks.File": "5.0.0",
@@ -1120,7 +1133,7 @@
       },
       "Pms.Domain/1.0.0": {
         "dependencies": {
-          "DataBase.Core": "1.0.0"
+          "DataModels.Core": "1.0.0"
         },
         "runtime": {
           "Pms.Domain.dll": {}
@@ -1128,7 +1141,7 @@
       },
       "Pms.Infrastructure/1.0.0": {
         "dependencies": {
-          "DataBase.Core": "1.0.0",
+          "DataModels.Core": "1.0.0",
           "Logging.Core": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.4",
           "Microsoft.EntityFrameworkCore": "8.0.4",
@@ -1144,10 +1157,20 @@
           "Pms.Infrastructure.dll": {}
         }
       },
+      "Shared.AuditLog/1.0.0": {
+        "dependencies": {
+          "DataModels.Core": "1.0.0",
+          "Logging.Core": "1.0.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "Shared.AuditLog.dll": {}
+        }
+      },
       "SharedModels/1.0.0": {
         "dependencies": {
           "Core.EventBus": "1.0.0",
-          "DataBase.Core": "1.0.0",
           "MassTransit.Abstractions": "8.2.2",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
@@ -1269,6 +1292,20 @@
       "sha512": "sha512-acKwXsBSs8UIaP8k1MLsp2S8k0c6fHgOyO9ptXTZVsf8RKS+po5UNXex0+qsrLRpz7Bey87s017hY/IOE0A+LA==",
       "path": "microsoft.aspnetcore.cryptography.keyderivation/8.0.4",
       "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.8.0.4.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Nxs7Z1q3f1STfLYKJSVXCs1iBl+Ya6E8o4Oy1bCxJ/rNI44E/0f6tbsrVqAWfB7jlnJfyaAtIalBVxPKUPQb4Q==",
+      "path": "microsoft.aspnetcore.http.abstractions/2.2.0",
+      "hashPath": "microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http.Features/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
+      "path": "microsoft.aspnetcore.http.features/2.2.0",
+      "hashPath": "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/8.0.4": {
       "type": "package",
@@ -1952,7 +1989,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "DataBase.Core/1.0.0": {
+    "DataModels.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1968,6 +2005,11 @@
       "sha512": ""
     },
     "Pms.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.AuditLog/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,4 +1,4 @@
-﻿using DataBase.Core;
+﻿using DataModels.Core.SqlModels;
 
 namespace Pms.Domain.Entities;
 

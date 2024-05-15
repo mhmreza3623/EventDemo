@@ -2,9 +2,11 @@ E:\My-Repo\EventDemo\src\Services\Pms\Pms.Infrastructure\bin\Debug\net8.0\Pms.In
 E:\My-Repo\EventDemo\src\Services\Pms\Pms.Infrastructure\bin\Debug\net8.0\Pms.Infrastructure.runtimeconfig.json
 E:\My-Repo\EventDemo\src\Services\Pms\Pms.Infrastructure\bin\Debug\net8.0\Pms.Infrastructure.dll
 E:\My-Repo\EventDemo\src\Services\Pms\Pms.Infrastructure\bin\Debug\net8.0\Pms.Infrastructure.pdb
-E:\My-Repo\EventDemo\src\Services\Pms\Pms.Infrastructure\bin\Debug\net8.0\DataBase.Core.dll
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Infrastructure\bin\Debug\net8.0\DataModels.Core.dll
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Infrastructure\bin\Debug\net8.0\Logging.Core.dll
 E:\My-Repo\EventDemo\src\Services\Pms\Pms.Infrastructure\bin\Debug\net8.0\Pms.Domain.dll
-E:\My-Repo\EventDemo\src\Services\Pms\Pms.Infrastructure\bin\Debug\net8.0\DataBase.Core.pdb
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Infrastructure\bin\Debug\net8.0\DataModels.Core.pdb
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Infrastructure\bin\Debug\net8.0\Logging.Core.pdb
 E:\My-Repo\EventDemo\src\Services\Pms\Pms.Infrastructure\bin\Debug\net8.0\Pms.Domain.pdb
 E:\My-Repo\EventDemo\src\Services\Pms\Pms.Infrastructure\obj\Debug\net8.0\Pms.Infrastructure.csproj.AssemblyReference.cache
 E:\My-Repo\EventDemo\src\Services\Pms\Pms.Infrastructure\obj\Debug\net8.0\Pms.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
@@ -18,5 +20,3 @@ E:\My-Repo\EventDemo\src\Services\Pms\Pms.Infrastructure\obj\Debug\net8.0\refint
 E:\My-Repo\EventDemo\src\Services\Pms\Pms.Infrastructure\obj\Debug\net8.0\Pms.Infrastructure.pdb
 E:\My-Repo\EventDemo\src\Services\Pms\Pms.Infrastructure\obj\Debug\net8.0\Pms.Infrastructure.genruntimeconfig.cache
 E:\My-Repo\EventDemo\src\Services\Pms\Pms.Infrastructure\obj\Debug\net8.0\ref\Pms.Infrastructure.dll
-E:\My-Repo\EventDemo\src\Services\Pms\Pms.Infrastructure\bin\Debug\net8.0\Logging.Core.dll
-E:\My-Repo\EventDemo\src\Services\Pms\Pms.Infrastructure\bin\Debug\net8.0\Logging.Core.pdb

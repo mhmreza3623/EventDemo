@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Co2xCcsZDuwg3DnyY1QpmO9fjkG3FCRSLdideJHfkvb/ynuLmf1y7zSx9c109maKn4v5ZF6q+M6J7Qor4JYUAQ==",
+  "dgSpecHash": "9VDotsHDr2CF7KF3m3wxQTC+eVx+mV2+ZpQJh715K4GTSzJZoICcCVytyCKddRCxfCNDfPST0rcZF0/oEYo7EA==",
   "success": true,
-  "projectFilePath": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataBase.Core.csproj",
+  "projectFilePath": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataModels.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\m.ramezani\\.nuget\\packages\\mongodb.bson\\2.25.0\\mongodb.bson.2.25.0.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",

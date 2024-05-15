@@ -936,17 +936,17 @@
           "Core.EventBus.dll": {}
         }
       },
-      "DataBase.Core/1.0.0": {
+      "DataModels.Core/1.0.0": {
         "dependencies": {
           "MongoDB.Bson": "2.25.0"
         },
         "runtime": {
-          "DataBase.Core.dll": {}
+          "DataModels.Core.dll": {}
         }
       },
       "Logging.Core/1.0.0": {
         "dependencies": {
-          "DataBase.Core": "1.0.0",
+          "DataModels.Core": "1.0.0",
           "Serilog.AspNetCore": "8.0.1",
           "Serilog.Sinks.Console": "5.0.1",
           "Serilog.Sinks.File": "5.0.0",
@@ -959,7 +959,7 @@
       },
       "Pms.Domain/1.0.0": {
         "dependencies": {
-          "DataBase.Core": "1.0.0"
+          "DataModels.Core": "1.0.0"
         },
         "runtime": {
           "Pms.Domain.dll": {}
@@ -967,7 +967,7 @@
       },
       "Pms.Infrastructure/1.0.0": {
         "dependencies": {
-          "DataBase.Core": "1.0.0",
+          "DataModels.Core": "1.0.0",
           "Logging.Core": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.4",
           "Microsoft.EntityFrameworkCore": "8.0.4",
@@ -986,7 +986,6 @@
       "SharedModels/1.0.0": {
         "dependencies": {
           "Core.EventBus": "1.0.0",
-          "DataBase.Core": "1.0.0",
           "MassTransit.Abstractions": "8.2.2",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
@@ -1667,7 +1666,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "DataBase.Core/1.0.0": {
+    "DataModels.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

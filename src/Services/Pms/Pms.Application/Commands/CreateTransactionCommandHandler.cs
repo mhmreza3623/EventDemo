@@ -3,7 +3,7 @@ using MediatR;
 using Pms.Domain.EntityCollections;
 using Pms.Domain.Enums;
 using Pms.Domain.Repositories;
-using SharedModels.TransactionIntegrationEvents;
+using SharedModels;
 
 namespace Pms.Application.Commands
 {
@@ -30,7 +30,8 @@ namespace Pms.Application.Commands
             };
             var respone = await _transactionRepository.InsertTransactionLog(transactionLog);
 
-            await _eventPublisher.PublishAsync(new TransactionCreated(Guid.NewGuid(), transactionLog.Id, PaymentType.AccountTransfer.ToString(), "source", "desc"));
+            await _eventPublisher.PublishAsync(new TransactionCreated(Guid.NewGuid(), transactionLog.Id, 
+                PaymentType.AccountTransfer.ToString(), "source", "desc"));
 
             return new SucceedResponse(null);
 

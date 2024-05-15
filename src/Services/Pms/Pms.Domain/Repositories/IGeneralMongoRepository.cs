@@ -1,4 +1,4 @@
-﻿using DataBase.Core;
+﻿using DataModels.Core.MongoDb;
 
 namespace Pms.Domain.Repositories
 {

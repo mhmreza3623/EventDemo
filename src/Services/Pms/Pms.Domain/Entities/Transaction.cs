@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DataBase.Core;
+using DataModels.Core.SqlModels;
 using Pms.Domain.Enums;
 
 namespace Pms.Domain.Entities

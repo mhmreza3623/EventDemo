@@ -4,12 +4,12 @@
     "E:\\My-Repo\\EventDemo\\src\\Services\\Pms\\Pms.Infrastructure\\Pms.Infrastructure.csproj": {}
   },
   "projects": {
-    "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataBase.Core.csproj": {
+    "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataModels.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataBase.Core.csproj",
-        "projectName": "DataBase.Core",
-        "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataBase.Core.csproj",
+        "projectUniqueName": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataModels.Core.csproj",
+        "projectName": "DataModels.Core",
+        "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataModels.Core.csproj",
         "packagesPath": "C:\\Users\\m.ramezani\\.nuget\\packages\\",
         "outputPath": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\obj\\",
         "projectStyle": "PackageReference",
@@ -106,8 +106,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataBase.Core.csproj": {
-                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataBase.Core.csproj"
+              "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataModels.Core.csproj": {
+                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataModels.Core.csproj"
               }
             }
           }
@@ -198,8 +198,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataBase.Core.csproj": {
-                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataBase.Core.csproj"
+              "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataModels.Core.csproj": {
+                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataModels.Core.csproj"
               }
             }
           }
@@ -268,8 +268,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataBase.Core.csproj": {
-                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataBase.Core.csproj"
+              "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataModels.Core.csproj": {
+                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataModels.Core.csproj"
               },
               "E:\\My-Repo\\EventDemo\\src\\Core\\Logging\\Logging.Core\\Logging.Core.csproj": {
                 "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\Logging\\Logging.Core\\Logging.Core.csproj"

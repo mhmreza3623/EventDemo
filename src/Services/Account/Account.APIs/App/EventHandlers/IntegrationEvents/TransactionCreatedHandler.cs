@@ -1,8 +1,5 @@
-﻿using Core.EventBus.Handlers;
-using Core.EventBus.Masstransit;
-using MassTransit;
-using Newtonsoft.Json;
-using SharedModels.TransactionIntegrationEvents;
+﻿using MassTransit;
+using SharedModels;
 
 namespace Account.APIs.App.EventHandlers.IntegrationEvents
 {

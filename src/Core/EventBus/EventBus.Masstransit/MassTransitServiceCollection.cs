@@ -27,9 +27,7 @@ namespace Core.EventBus.Masstransit
                 x.UsingRabbitMq((context, cfg) =>
                 {
                     cfg.AutoStart = true;
-
-                    cfg.UseInstrumentation();
-
+                    //cfg.UseInstrumentation();
                     if (HostMetadataCache.IsRunningInContainer)
                         cfg.Host(config.RabbitMqHostName ?? throw new NullReferenceException("The host has not been specififed for RabbitMQ"), x =>
                         {
@@ -43,12 +41,10 @@ namespace Core.EventBus.Masstransit
 
                 foreach (var consumerItem in handlers.GetConsumersInfo())
                 {
-                    x.AddConsumer(consumerItem);
+                    x.AddConsumer(consumerItem.EventHandler);
                 }
             });
-
             services.AddTransient<IEventPublisher, EventPublisher>();
-            services.Configure<MassTransitConfiguration>(configuration.GetSection(MassTransitConfiguration.SectionName));
         }
     }
 }

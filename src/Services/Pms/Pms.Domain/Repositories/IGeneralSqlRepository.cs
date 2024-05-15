@@ -1,5 +1,5 @@
 ﻿using System.Linq.Expressions;
-using DataBase.Core;
+using DataModels.Core.SqlModels;
 using Pms.Infrastructure.Persistence.EF;
 
 namespace Pms.Infrastructure.Persistence.EF.Repositories
