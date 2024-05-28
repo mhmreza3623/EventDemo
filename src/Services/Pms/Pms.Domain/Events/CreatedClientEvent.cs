@@ -1,13 +1,18 @@
-﻿
-using Core.EventBus.Events;
-using Pms.Domain.Entities;
+﻿using Core.EventBus.Events;
+using Newtonsoft.Json;
 
-namespace Pms.Domain.DomainEvents;
+namespace Pms.Domain.Events;
 
 public class CreatedClientEvent : DomainEvent
 {
-    public CreatedClientEvent(Client client) : base(client)
-    {
+    public string ClientName { get; }
+    public string UxId { get; }
 
+    public CreatedClientEvent(string clientName, string uxId)
+    {
+        ClientName = clientName;
+        UxId = uxId;
+
+        Value = JsonConvert.SerializeObject(new { ClientName, uxId });
     }
 }

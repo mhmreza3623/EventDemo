@@ -33,13 +33,13 @@ namespace Pms.APIs.Protos {
             "F3VwZGF0ZUNyZWRlbnRpYWxSZXF1ZXN0EhIKCmNsaWVudFV4SWQYASABKAkS",
             "EAoIdXNlcm5hbWUYAiABKAkSEAoIcGFzc3dvcmQYAyABKAkiPwoYdXBkYXRl",
             "Q3JlZGVudGlhbFJlc3BvbnNlEhIKCmNsaWVudFV4SWQYASABKAkSDwoHc3Vj",
-            "Y2VlZBgCIAEoCDLyAQoNQ2xpZW50U2VydmljZRJDCg5SZWdpc3RlckNsaWVu",
+            "Y2VlZBgCIAEoCDL1AQoNQ2xpZW50U2VydmljZRJDCg5SZWdpc3RlckNsaWVu",
             "dBIWLnJlZ2lzdGVyQ2xpZW50UmVxdWVzdBoXLnJlZ2lzdGVyQ2xpZW50UmVz",
-            "cG9uc2UiABJOChVVcGRhdGVLYXJpekNyZWRlbnRpYWwSGC51cGRhdGVDcmVk",
-            "ZW50aWFsUmVxdWVzdBoZLnVwZGF0ZUNyZWRlbnRpYWxSZXNwb25zZSIAEkwK",
-            "E1VwZGF0ZURwa0NyZWRlbnRpYWwSGC51cGRhdGVDcmVkZW50aWFsUmVxdWVz",
-            "dBoZLnVwZGF0ZUNyZWRlbnRpYWxSZXNwb25zZSIAQhKqAg9QbXMuQVBJcy5Q",
-            "cm90b3NiBnByb3RvMw=="));
+            "cG9uc2UiABJRChhVcGRhdGVQcm92aWRlckNyZWRlbnRpYWwSGC51cGRhdGVD",
+            "cmVkZW50aWFsUmVxdWVzdBoZLnVwZGF0ZUNyZWRlbnRpYWxSZXNwb25zZSIA",
+            "EkwKE1VwZGF0ZURwa0NyZWRlbnRpYWwSGC51cGRhdGVDcmVkZW50aWFsUmVx",
+            "dWVzdBoZLnVwZGF0ZUNyZWRlbnRpYWxSZXNwb25zZSIAQhKqAg9QbXMuQVBJ",
+            "cy5Qcm90b3NiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

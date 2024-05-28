@@ -9,8 +9,6 @@ using Pms.Application.Dtos.Api.OnlinePayment;
 
 namespace Pms.APIs.Api
 {
-    [Authorize]
-    [IdentifyClient]
     public class OnlinePaymentController : BaseV1Controller
     {
         private readonly IMediator _mediator;

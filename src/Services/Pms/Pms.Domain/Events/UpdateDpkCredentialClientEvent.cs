@@ -1,10 +1,13 @@
 ﻿using Core.EventBus.Events;
+using Newtonsoft.Json;
 
-namespace Pms.Domain.DomainEvents;
+namespace Pms.Domain.Events;
 
 public class UpdateDpkCredentialClientEvent : DomainEvent
 {
-    public UpdateDpkCredentialClientEvent(object entity) : base(entity)
+    public UpdateDpkCredentialClientEvent(string uxId,string dpkUsername)
     {
+        Value = JsonConvert.SerializeObject(new { uxId, dpkUsername });
+
     }
 }

@@ -1,5 +1,4 @@
 ﻿using Core.EventBus.Events;
-using Newtonsoft.Json;
 using Pms.Domain.Entities.Mongo;
 using Pms.Domain.Repositories;
 
@@ -16,18 +15,14 @@ namespace Pms.Infrastructure.Persistence
 
         public Task SaveEventAsync(List<DomainEvent> events)
         {
-            foreach (var domainEvent in events)
+            foreach (var @event in events)
             {
                 var log = new EventLogCollection()
                 {
-                    Value = JsonConvert.SerializeObject(domainEvent.Entity, Formatting.Indented,
-                        new JsonSerializerSettings()
-                        {
-                            ReferenceLoopHandling = ReferenceLoopHandling.Ignore
-                        }),
-                    EventName = domainEvent.EventName,
-                    EventId = domainEvent.EventId,
-                    CreateTime = domainEvent.CreationDate ,
+                    Value = @event.Value,
+                    EventName = @event.EventName,
+                    EventId = @event.EventId,
+                    CreateTime = @event.CreationDate,
                 };
 
                 _eventRespository.InsertLog(log);

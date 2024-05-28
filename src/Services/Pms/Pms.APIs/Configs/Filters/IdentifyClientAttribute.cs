@@ -32,6 +32,7 @@ namespace Pms.APIs.Configs.Filters
 
                 return;
             }
+
             ((BaseV1Controller)context.Controller).Client = new ClientModel()
             {
                 IsActive = verifyResponse.IsActive,

@@ -8,7 +8,7 @@
             CreationDate = DateTime.Now;
         }
 
-        public Guid EventId { get; private set; }
+        public Guid EventId { get; protected set; }
         public DateTime CreationDate { get; private set; }
 
         public virtual string EventName

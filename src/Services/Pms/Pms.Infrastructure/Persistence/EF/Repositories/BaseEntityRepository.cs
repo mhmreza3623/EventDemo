@@ -38,9 +38,9 @@ public class BaseEntityRepository<TEntity> : IGeneralSqlRepository<TEntity> wher
         return _dbSet.Where(predict).ToListAsync();
     }
 
-    public Task<TEntity> GetAsync(Guid uxId)
+    public Task<TEntity?> GetAsync(Guid uxId)
     {
-        return _dbSet.SingleAsync(q => q.UxId == uxId);
+        return _dbSet.SingleOrDefaultAsync(q => q.UxId == uxId);
     }
 
     public Task InsertAsync(TEntity entity)

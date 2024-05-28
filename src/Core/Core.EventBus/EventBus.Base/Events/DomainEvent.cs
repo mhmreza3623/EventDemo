@@ -2,19 +2,7 @@
 {
     public class DomainEvent : Event
     {
-        public object Entity { get; }
-
-        public DomainEvent(object entity)
-        {
-            Entity = entity;
-        }
-
-        public override string EventName
-        {
-            get
-            {
-                return this.GetType().Name.Replace("DomainEvent", string.Empty);
-            }
-        }
+        public string Value { get; set; }
+        public override string EventName => this.GetType().Name.Replace("DomainEvent", string.Empty);
     }
 }

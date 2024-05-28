@@ -1,10 +1,12 @@
 ﻿using Core.EventBus.Events;
+using Newtonsoft.Json;
 
-namespace Pms.Domain.DomainEvents;
+namespace Pms.Domain.Events;
 
 public class CreatedPaymentEvent : DomainEvent
 {
-    public CreatedPaymentEvent(object entity) : base(entity)
+    public CreatedPaymentEvent(string amount, string source, string destination)
     {
+        Value = JsonConvert.SerializeObject(new { amount, source, destination });
     }
 }

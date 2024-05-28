@@ -63,10 +63,10 @@ namespace Pms.APIs.Protos {
         __Marshaller_registerClientResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Pms.APIs.Protos.updateCredentialRequest, global::Pms.APIs.Protos.updateCredentialResponse> __Method_UpdateKarizCredential = new grpc::Method<global::Pms.APIs.Protos.updateCredentialRequest, global::Pms.APIs.Protos.updateCredentialResponse>(
+    static readonly grpc::Method<global::Pms.APIs.Protos.updateCredentialRequest, global::Pms.APIs.Protos.updateCredentialResponse> __Method_UpdateProviderCredential = new grpc::Method<global::Pms.APIs.Protos.updateCredentialRequest, global::Pms.APIs.Protos.updateCredentialResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "UpdateKarizCredential",
+        "UpdateProviderCredential",
         __Marshaller_updateCredentialRequest,
         __Marshaller_updateCredentialResponse);
 
@@ -95,7 +95,7 @@ namespace Pms.APIs.Protos {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Pms.APIs.Protos.updateCredentialResponse> UpdateKarizCredential(global::Pms.APIs.Protos.updateCredentialRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Pms.APIs.Protos.updateCredentialResponse> UpdateProviderCredential(global::Pms.APIs.Protos.updateCredentialRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -115,7 +115,7 @@ namespace Pms.APIs.Protos {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_RegisterClient, serviceImpl.RegisterClient)
-          .AddMethod(__Method_UpdateKarizCredential, serviceImpl.UpdateKarizCredential)
+          .AddMethod(__Method_UpdateProviderCredential, serviceImpl.UpdateProviderCredential)
           .AddMethod(__Method_UpdateDpkCredential, serviceImpl.UpdateDpkCredential).Build();
     }
 
@@ -127,7 +127,7 @@ namespace Pms.APIs.Protos {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, ClientServiceBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_RegisterClient, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Pms.APIs.Protos.registerClientRequest, global::Pms.APIs.Protos.registerClientResponse>(serviceImpl.RegisterClient));
-      serviceBinder.AddMethod(__Method_UpdateKarizCredential, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Pms.APIs.Protos.updateCredentialRequest, global::Pms.APIs.Protos.updateCredentialResponse>(serviceImpl.UpdateKarizCredential));
+      serviceBinder.AddMethod(__Method_UpdateProviderCredential, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Pms.APIs.Protos.updateCredentialRequest, global::Pms.APIs.Protos.updateCredentialResponse>(serviceImpl.UpdateProviderCredential));
       serviceBinder.AddMethod(__Method_UpdateDpkCredential, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Pms.APIs.Protos.updateCredentialRequest, global::Pms.APIs.Protos.updateCredentialResponse>(serviceImpl.UpdateDpkCredential));
     }
 

@@ -1,12 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
 using Pms.APIs.Configs.Filters;
 using Pms.APIs.Models;
 
 namespace Pms.APIs.Api
 {
-    [ApiController]
-    [Route("api/v1/[controller]")]
-    public class BaseV1Controller : ControllerBase
+    [IdentifyClient]
+    public class BaseV1Controller : GeneralController
     {
         public ClientModel Client { get; set; }
     }

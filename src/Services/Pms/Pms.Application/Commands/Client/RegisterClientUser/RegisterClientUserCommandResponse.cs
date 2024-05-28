@@ -1,6 +1,6 @@
 ﻿using Pms.Domain.Common.Enums;
 
-namespace Pms.Application.Commands.Authenticate.RegisterClientUser;
+namespace Pms.Application.Commands.Client.RegisterClientUser;
 
 public class RegisterClientUserCommandResponse : BaseCommandResponse
 {
@@ -11,5 +11,6 @@ public class RegisterClientUserCommandResponse : BaseCommandResponse
 
     public RegisterClientUserCommandResponse(bool succeed, ErrorCodes? errorCode = null) : base(succeed, errorCode)
     {
+
     }
 }

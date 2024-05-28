@@ -166,7 +166,7 @@ namespace Pms.Infrastructure.persistence.ef.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
-                    b.Property<long>("ClientId")
+                    b.Property<long?>("ClientId")
                         .HasColumnType("bigint");
 
                     b.Property<string>("ConcurrencyStamp")
@@ -467,8 +467,7 @@ namespace Pms.Infrastructure.persistence.ef.Migrations
                     b.HasOne("Pms.Domain.Entities.Client", "Client")
                         .WithMany("Users")
                         .HasForeignKey("ClientId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.NoAction);
 
                     b.Navigation("Client");
                 });

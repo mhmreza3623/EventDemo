@@ -4,7 +4,7 @@ option csharp_namespace = "Pms.APIs.Protos";
 
 service ClientService{
 	rpc RegisterClient(registerClientRequest) returns (registerClientResponse){}
-	rpc UpdateKarizCredential(updateCredentialRequest) returns (updateCredentialResponse){}
+	rpc UpdateProviderCredential(updateCredentialRequest) returns (updateCredentialResponse){}
 	rpc UpdateDpkCredential(updateCredentialRequest) returns (updateCredentialResponse){}
 }
 

@@ -1,7 +1,6 @@
 ﻿using MediatR;
 using Pms.Application.Queries;
 using Pms.Domain.Common.Enums;
-using Pms.Domain.DomainEvents;
 
 namespace Pms.Application.Commands.Client.UpdateClientProviderCredential;
 
@@ -25,9 +24,7 @@ public class UpdateClientProviderCredentialCommandHandler : IRequestHandler<Upda
             return new UpdateClientProviderCredentialCommandResponse(false, null, ErrorCodes.NotFoundClient);
         }
 
-        client.ProviderUsername = request.KarizUsername;
-        client.ProviderPassword = request.KarizPassword;
-        client.Events.Add(new UpdateKarizCredentialClientEvent(client));
+        client.UpdateClientProviderCredential(request.KarizUsername, request.KarizPassword);
 
         await _clientRepository.UpdateAsync(client);
 

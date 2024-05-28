@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Pms.Application.Commands.Authenticate.RegisterClientUser
+namespace Pms.Application.Commands.Client.RegisterClientUser
 {
     public class RegisterClientUserCommand : IRequest<RegisterClientUserCommandResponse>
     {
@@ -12,9 +12,9 @@ namespace Pms.Application.Commands.Authenticate.RegisterClientUser
             ClientUxId = clientUxId;
         }
 
-        public string ClientUxId { get; private set; }
-        public string UserName { get; private set; }
-        public string Password { get; private set; }
-        public bool IsActive { get; private set; }
+        public string ClientUxId { get; }
+        public string UserName { get; }
+        public string Password { get; }
+        public bool IsActive { get; }
     }
 }

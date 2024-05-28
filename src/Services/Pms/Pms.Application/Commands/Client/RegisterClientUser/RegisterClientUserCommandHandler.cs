@@ -1,11 +1,9 @@
 ﻿using MediatR;
-using Microsoft.Extensions.Options;
 using Pms.Application.Queries;
 using Pms.Domain.Common.Enums;
 using Pms.Domain.Interfaces;
-using SharedKernel.Common;
 
-namespace Pms.Application.Commands.Authenticate.RegisterClientUser;
+namespace Pms.Application.Commands.Client.RegisterClientUser;
 
 public class RegisterClientUserCommandHandler : IRequestHandler<RegisterClientUserCommand, RegisterClientUserCommandResponse>
 {
@@ -35,12 +33,12 @@ public class RegisterClientUserCommandHandler : IRequestHandler<RegisterClientUs
             return new RegisterClientUserCommandResponse(false, ErrorCodes.NotFoundClient);
         }
 
-        var createdUser = await _identityService.GenerateUser(command.UserName, command.Password, command.IsActive, client);
+        var createdUser = await _identityService.GenerateClientUser(command.UserName, command.Password, command.IsActive, client);
 
         if (createdUser == null) return new RegisterClientUserCommandResponse(false, ErrorCodes.CreateUserFailed);
 
         var token = _identityService
-            .GenerateToken(createdUser.UserName, clientUxId);
+            .GenerateClientUserToken(createdUser.UserName, clientUxId);
 
         return new RegisterClientUserCommandResponse(true)
         {

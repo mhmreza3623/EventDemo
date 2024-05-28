@@ -19,7 +19,7 @@ public class ClientRepository : IClientRepository
         return _clientRepository.AllAsync();
     }
 
-    public Task<Client> GetAsync(Guid uxId)
+    public Task<Client?> GetAsync(Guid uxId)
     {
         return _clientRepository.GetAsync(uxId);
     }

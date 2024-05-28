@@ -26,7 +26,7 @@ namespace Pms.APIs.Implementations
             };
         }
 
-        public override async Task<updateCredentialResponse> UpdateKarizCredential(updateCredentialRequest request,
+        public override async Task<updateCredentialResponse> UpdateProviderCredential(updateCredentialRequest request,
             ServerCallContext context)
         {
             var response =

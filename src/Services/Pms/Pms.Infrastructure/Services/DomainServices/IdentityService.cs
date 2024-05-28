@@ -26,8 +26,6 @@ namespace Pms.Infrastructure.Services.DomainServices
             _jwtConfig = jwtConfig;
             _userRepository = userRepository;
         }
-     
-      
 
         public ClaimsPrincipal GetPrincipal(string token)
         {
@@ -60,7 +58,7 @@ namespace Pms.Infrastructure.Services.DomainServices
             }
         }
 
-        public string GenerateToken(string username, string clientUxId, int expireMinutes = 2)
+        public string GenerateClientUserToken(string username, string clientUxId, int expireMinutes = 2)
         {
             var symmetricKey = Encoding.UTF8.GetBytes(_jwtConfig.Value.Secret);
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -83,18 +81,60 @@ namespace Pms.Infrastructure.Services.DomainServices
             return token;
         }
 
-        public async Task<ApplicationUser> GenerateUser(string username, string password, bool isActive, Client client)
+        public string GenerateToken(string username, int expireMinutes = 2)
         {
-            var user = Activator.CreateInstance<ApplicationUser>();
+            var symmetricKey = Encoding.UTF8.GetBytes(_jwtConfig.Value.Secret);
+            var tokenHandler = new JwtSecurityTokenHandler();
+
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new[]
+                {
+                    new Claim(ClaimTypes.Name, username),
+                    new Claim(JwtRegisteredClaimNames.Aud, _jwtConfig.Value.Audience),
+                    new Claim("CUxID", string.Empty),
+                }),
+                Expires = DateTime.Now.AddMinutes(Convert.ToInt32(expireMinutes)),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(symmetricKey), SecurityAlgorithms.HmacSha256Signature)
+            };
+
+            SecurityToken securityToken = tokenHandler.CreateToken(tokenDescriptor);
+            var token = tokenHandler.WriteToken(securityToken);
+
+            return token;
+        }
+
+        public async Task<bool> CheckPassword(string username, string password)
+        {
+            var user= await _userManager.FindByNameAsync(username);
+            if (user != null)
+            {
+                return await _userManager.CheckPasswordAsync(user, password);
+            }
+
+            return false;
+        }
+
+        public async Task<ApplicationUser?> GenerateClientUser(string username, string password, bool isActive, Client client)
+        {
+            var user = ApplicationUser.CreateClientUser(username, password, isActive, client);
+
             await _userStore.SetUserNameAsync(user, username, CancellationToken.None);
-            user.UxId = Guid.NewGuid();
-            user.IsActive = isActive;
-            user.Client = client;
 
             var result = await _userManager.CreateAsync(user, password);
 
             return result.Succeeded ? user : null;
+        }
 
+        public async Task<ApplicationUser?> GenerateUser(string username, string password, bool isActive)
+        {
+            var user = ApplicationUser.Create(username, password, isActive);
+
+            await _userStore.SetUserNameAsync(user, username, CancellationToken.None);
+
+            var result = await _userManager.CreateAsync(user, password);
+
+            return result.Succeeded ? user : null;
         }
 
         public async Task<ApplicationUser> GetUser(string userName)

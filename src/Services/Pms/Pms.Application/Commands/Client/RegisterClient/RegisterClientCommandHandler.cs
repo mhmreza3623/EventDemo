@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using Pms.Domain.DomainEvents;
 using Pms.Domain.Repositories;
 
 namespace Pms.Application.Commands.Client.RegisterClient;
@@ -15,19 +14,8 @@ public class RegisterClientCommandHandler : IRequestHandler<RegisterClientComman
 
     public async Task<RegisterClientCommandResponse> Handle(RegisterClientCommand request, CancellationToken cancellationToken)
     {
-        var newClient = new Domain.Entities.Client()
-        {
-            Name =
-            request.Name,
-            DisplayName = request.DisplayName,
-            Ips = request.Ips,
-            IsActive = true,
-            UxId = Guid.NewGuid(),
-            DpkUserName = request.DpkUserName,
-            DpkPassword = request.DpkPassword,
-
-        };
-        newClient.Events.Add(new CreatedClientEvent(newClient));
+        var newClient = Domain.Entities.Client.CreateClient(request.Name, request.DisplayName, true,
+            request.DpkUserName, request.DpkPassword, request.ProviderUsename, request.ProviderPassword, request.Ips);
 
         await _clientRepository.InsertAsync(newClient);
 

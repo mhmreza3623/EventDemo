@@ -2,7 +2,9 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Pms.APIs.Configs.Filters;
+using Pms.Application.Commands.Client.GetClientToken;
 using Pms.Application.Commands.Client.RegisterClient;
+using Pms.Application.Commands.Client.RegisterClientUser;
 using Pms.Application.Commands.Client.UpdateClientDpkCredential;
 using Pms.Application.Commands.Client.UpdateClientProviderCredential;
 using Pms.Application.Dtos.Api.Clients;
@@ -10,7 +12,6 @@ using Pms.Application.Dtos.Api.Clients;
 namespace Pms.APIs.Api
 {
     [Authorize]
-    [IdentifyClient]
     public class ClientController : BaseV1Controller
     {
         private readonly IMediator _mediator;
@@ -20,11 +21,14 @@ namespace Pms.APIs.Api
             _mediator = mediator;
         }
 
-        [HttpPost("register")]
-        public async Task<IActionResult> RegisterClient(RegisterClientRequest request)
+        [HttpPost("getToken")]
+        public async Task<IActionResult> GetToken(GetClientTokenRequest request)
         {
-            var client = Client;
-            var response = await _mediator.Send(new RegisterClientCommand(request.Name, request.DisplayName, request.DpkUsername, request.DpkPassword, request.Ips, request.KarizUsername, request.KarizPassword));
+            var response = await _mediator.Send(new GetClientTokenCommand()
+            {
+                UserName = request.UserName,
+                ClientUxId = Client.ClientUxId.ToString()
+            });
 
             return Ok(response);
         }
@@ -32,7 +36,7 @@ namespace Pms.APIs.Api
         [HttpPost("updateDpkCredential")]
         public async Task<IActionResult> UpdateClientKarizCredential(UpdateClientCredentialRequest request)
         {
-            var response = await _mediator.Send(new UpdateClientDpkCredentialCommand(request.ClientUxId, request.Username, request.Password));
+            var response = await _mediator.Send(new UpdateClientDpkCredentialCommand(Client.ClientUxId.ToString(), request.Username, request.Password));
 
             return Ok(response);
 
@@ -41,7 +45,7 @@ namespace Pms.APIs.Api
         [HttpPost("updateProviderCredential")]
         public async Task<IActionResult> UpdateClientDpkCredential(UpdateClientCredentialRequest request)
         {
-            var response = await _mediator.Send(new UpdateClientProviderCredentialCommand(request.ClientUxId, request.Username, request.Password));
+            var response = await _mediator.Send(new UpdateClientProviderCredentialCommand(Client.ClientUxId.ToString(), request.Username, request.Password));
 
             return Ok(response);
         }
