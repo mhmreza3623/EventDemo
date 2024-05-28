@@ -19,15 +19,8 @@ namespace Pms.APIs.Configs.Filters
         public override void OnActionExecuting(ActionExecutingContext context)
         {
             var _mediator = context.HttpContext.RequestServices.GetService<IMediator>();
-
             var authorize = context.HttpContext.Request.Headers.Authorization;
-
-            var controllerName = context.RouteData.Values["controller"];
-            var actionName = context.RouteData.Values["action"];
-            var verifyResponse = _mediator.Send(new VerifyTokenCommand()
-                {
-                    Token = authorize.ToString().Replace("Bearer", "").Replace("bearer", "")
-                })
+            var verifyResponse = _mediator.Send(new VerifyTokenCommand(authorize.ToString().Replace("Bearer", "").Replace("bearer", "")))
                 .GetAwaiter()
                 .GetResult();
 
@@ -36,6 +29,7 @@ namespace Pms.APIs.Configs.Filters
                 var response = context.HttpContext.Response;
                 response.StatusCode = (int)HttpStatusCode.Unauthorized;
                 context.Result = new UnauthorizedObjectResult(ErrorCodes.InvalidClientId);
+
                 return;
             }
             ((BaseV1Controller)context.Controller).Client = new ClientModel()

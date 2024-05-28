@@ -17,7 +17,7 @@ namespace Pms.APIs.Implementations
         }
         public override async Task<registerClientResponse> RegisterClient(registerClientRequest request, ServerCallContext context)
         {
-            var response = await _mediator.Send(new RegisterClientCommand(request.Name, request.DisplayName, request.DpkUserName, request.DpkPassword, request.Ips, request.KarizUsername, request.KarizPassword));
+            var response = await _mediator.Send(new RegisterClientCommand(request.Name, request.DisplayName, request.DpkUserName, request.DpkPassword, request.Ips, request.KarizUsername, request.ProviderPassword));
 
             return new registerClientResponse()
             {
