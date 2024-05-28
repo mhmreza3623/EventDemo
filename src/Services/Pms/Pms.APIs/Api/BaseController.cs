@@ -34,8 +34,7 @@ namespace Pms.APIs.Api
         {
             var response = await _mediator.Send(new GetTokenCommand()
             {
-                UserName = request.UserName,
-                Password = request.Password
+                UserUxId = request.UserUxId,
             });
 
             return Ok(response);
@@ -49,8 +48,8 @@ namespace Pms.APIs.Api
             return Ok(response);
         }
 
-        [HttpPost("client/assignUser")]
-        public async Task<IActionResult> AssignUser(RegisterClientUserRequest request)
+        [HttpPost("client/addUser")]
+        public async Task<IActionResult> AddUser(RegisterClientUserRequest request)
         {
             var response = await _mediator.Send(new RegisterClientUserCommand(request.UserName, request.Password, request.IsActive, request.ClientUxId));
 

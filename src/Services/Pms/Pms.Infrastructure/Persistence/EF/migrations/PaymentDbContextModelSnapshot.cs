@@ -222,7 +222,7 @@ namespace Pms.Infrastructure.persistence.ef.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
-                    b.Property<Guid>("UxId")
+                    b.Property<Guid>("UserUxId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
@@ -290,7 +290,7 @@ namespace Pms.Infrastructure.persistence.ef.Migrations
                     b.Property<string>("ProviderUsername")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("UxId")
+                    b.Property<Guid>("UserUxId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
@@ -353,7 +353,7 @@ namespace Pms.Infrastructure.persistence.ef.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("UxId")
+                    b.Property<Guid>("UserUxId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
@@ -401,7 +401,7 @@ namespace Pms.Infrastructure.persistence.ef.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("UxId")
+                    b.Property<Guid>("UserUxId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");

@@ -15,9 +15,6 @@ namespace Pms.Domain.Entities
         public string DpkUserName { get; private set; }
         public string DpkPassword { get; private set; }
 
-        /// <summary>
-        /// اطلاعاتی به ازای هر سامانه است که از بانک دریافت میشود 
-        /// </summary>
         public string? ProviderUsername { get; private set; }
         public string? ProviderPassword { get; private set; }
 

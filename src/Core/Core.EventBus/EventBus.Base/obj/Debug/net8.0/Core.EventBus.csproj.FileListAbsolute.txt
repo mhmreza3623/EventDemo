@@ -34,3 +34,4 @@ E:\My-Repo\EventDemo\src\Core\Core.EventBus\EventBus.Base\obj\Debug\net8.0\Core.
 E:\My-Repo\EventDemo\src\Core\Core.EventBus\EventBus.Base\obj\Debug\net8.0\refint\Core.EventBus.dll
 E:\My-Repo\EventDemo\src\Core\Core.EventBus\EventBus.Base\obj\Debug\net8.0\Core.EventBus.pdb
 E:\My-Repo\EventDemo\src\Core\Core.EventBus\EventBus.Base\obj\Debug\net8.0\ref\Core.EventBus.dll
+E:\My-Repo\EventDemo\src\Core\Core.EventBus\EventBus.Base\obj\Debug\net8.0\Core.EventBus.csproj.AssemblyReference.cache

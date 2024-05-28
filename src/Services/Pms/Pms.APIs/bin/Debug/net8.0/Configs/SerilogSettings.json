@@ -1,55 +1,53 @@
 {
   "Serilog": {
-    "Using": [ "Serilog.Sinks.MongoDB" ], //"Using": [ "Serilog.Sinks.MSSqlServer", "Serilog.Sinks.File", "Serilog.Sinks.Console", "Serilog.Sinks.MongoDB" ],
+    "Using": [ "Serilog.Sinks.MSSqlServer" ], //"Using": [ "Serilog.Sinks.MSSqlServer", "Serilog.Sinks.File", "Serilog.Sinks.Console", "Serilog.Sinks.MongoDB" ],
     "MinimumLevel": "Debug",
     "WriteTo": [
 
+      //  {
+      //    "Name": "MongoDBBson",
+      //    "Args": {
+      //      "databaseUrl": "mongodb://localhost:27017/Dpk_LogManagement",
+      //      "collectionName": "ErrorLogCollection",
+      //      "cappedMaxSizeMb": "1024",
+      //      "cappedMaxDocuments": "50000",
+      //      "rollingInterval": "Month"
+      //    }
+      //  }
+      /* insert into sql*/
       {
-        "Name": "MongoDBBson",
+        "Name": "MSSqlServer",
         "Args": {
-          "databaseUrl": "mongodb://localhost:27017/Dpk_LogManagement",
-          "collectionName": "ErrorLogCollection",
-          "cappedMaxSizeMb": "1024",
-          "cappedMaxDocuments": "50000",
-          "rollingInterval": "Month"
+          "connectionString": "data source=DPK-165\\SQL2019;initial catalog=DpkLogManagement;User ID=sa;Password=Dpk@12345;TrustServerCertificate=True",
+          "tableName": "Logs",
+          "autoCreateSqlTable": true,
+          "columnOptionsSection": {
+            "addStandardColumns": [
+              "LogEvent"
+            ],
+            "removeStandardColumns": [
+              "MessageTemplate",
+              "Properties"
+            ]
+          }
         }
       }
-/* insert into sql*/
-//{
-//  "Name": "MSSqlServer",
-//  "Args": {
-//    "connectionString": "data source=DPK-165\\SQL2019;initial catalog=DPKLogs;User ID=sa;Password=Dpk@12345;TrustServerCertificate=True",
-//    "sinkOptionsSection": {
-//      "tableName": "ErrorLogs",
-//      "schemaName": "EventLogging",
-//      "autoCreateSqlTable": true,
-//      "batchPostingLimit": 1000,
-//      "batchPeriod": "0.00:00:30"
-//    },
-//    "restrictedToMinimumLevel": "Warning",
-//    "columnOptionsSection": null,
-//    "addStandardColumns": [ "LogEvent" ],
-//    "removeStandardColumns": [ "MessageTemplate", "Properties" ],
-//    "timeStamp": {
-//      "columnName": "Timestamp",
-//      "convertToUtc": false
-//    }
-//  }
-//},
-/* insert into file*/
-//{
-//  "Name": "File",
-//  "Args": {
-//    "path": "../logs/webapi-.log",
-//    "rollingInterval": "Day",
-//    "outputTemplate": "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} {CorrelationId} {Level:u3} {Username} {Message:lj}{Exception}{NewLine}"
-//  }
-//},
-/*insert to console*/
-//{
-//  "Name": "Console",
-//  "Args": {
-//    "outputTemplate": "{Timestamp:yyyy-MM-dd HH:mm:ss} [{Level:u3}] {Message}{NewLine}{Exception}"
-//  }
-//}
-] } }
+      /* insert into file*/
+      //{
+      //  "Name": "File",
+      //  "Args": {
+      //    "path": "../logs/webapi-.log",
+      //    "rollingInterval": "Day",
+      //    "outputTemplate": "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} {CorrelationId} {Level:u3} {Username} {Message:lj}{Exception}{NewLine}"
+      //  }
+      //},
+      /*insert to console*/
+      //{
+      //  "Name": "Console",
+      //  "Args": {
+      //    "outputTemplate": "{Timestamp:yyyy-MM-dd HH:mm:ss} [{Level:u3}] {Message}{NewLine}{Exception}"
+      //  }
+      //}
+    ]
+  }
+}

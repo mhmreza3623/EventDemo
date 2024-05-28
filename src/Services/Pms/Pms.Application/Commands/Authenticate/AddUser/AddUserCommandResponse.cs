@@ -9,6 +9,5 @@ public class AddUserCommandResponse : BaseCommandResponse
     }
 
     public string? UserName { get; set; }
-    public Guid UxId { get; set; }
-    public string AccessToken { get; set; }
+    public Guid UserUxId { get; set; }
 }

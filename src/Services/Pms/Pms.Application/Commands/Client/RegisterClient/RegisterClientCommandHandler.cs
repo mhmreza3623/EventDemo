@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Pms.Domain.Events;
 using Pms.Domain.Repositories;
 
 namespace Pms.Application.Commands.Client.RegisterClient;
@@ -6,6 +7,7 @@ namespace Pms.Application.Commands.Client.RegisterClient;
 public class RegisterClientCommandHandler : IRequestHandler<RegisterClientCommand, RegisterClientCommandResponse>
 {
     private readonly IGeneralSqlRepository<Domain.Entities.Client> _clientRepository;
+    private readonly IMediator _mediator;
 
     public RegisterClientCommandHandler(IGeneralSqlRepository<Domain.Entities.Client> clientRepository)
     {

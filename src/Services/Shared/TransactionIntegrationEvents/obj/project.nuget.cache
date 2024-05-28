@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "hgUVsc6DKBTrkwFuE2hQsBtF8CFPkVM2Bv9mrJI85HeUEQLZmOsKRhYn8lm+2+FCcK3zi0PheBOhNniPUIdqmA==",
+  "dgSpecHash": "B4o3Rz4p6FkIyJM99ON0KdrEm7KZeAkSbH5rZ3dnRE7z5MSpOQ2vAwX9DY9CEHym79sgMkMeiXlBF08B9IUbQQ==",
   "success": true,
   "projectFilePath": "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\TransactionIntegrationEvents\\Shared.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\m.ramezani\\.nuget\\packages\\masstransit.abstractions\\8.2.2\\masstransit.abstractions.8.2.2.nupkg.sha512",
+    "C:\\Users\\m.ramezani\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\m.ramezani\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.0\\microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",

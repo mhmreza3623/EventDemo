@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XDu7YSj1cvwIBact6HbiTvre+CotRSMkU/stBpPCqxk0WU9GPBweIRJB8nV/YfpCgSxagIP6nHNOxuVg9q8fnw==",
+  "dgSpecHash": "MpDFX1MxRU2KDO1ylGMMuAoT/Uo+q51wKiQAbcGt495yN5Hg9nLGed3Qwo+Da6uGOUnU/tJ3AvYxyu603hxmDQ==",
   "success": true,
   "projectFilePath": "E:\\My-Repo\\EventDemo\\src\\Core\\SharedKernel\\Core.SharedKernel\\SharedKernel.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,8 @@
     "C:\\Users\\m.ramezani\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\bouncycastle.netcore\\2.2.1\\bouncycastle.netcore.2.2.1.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\m.ramezani\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\m.ramezani\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.5\\microsoft.aspnetcore.authentication.jwtbearer.8.0.5.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.5\\microsoft.data.sqlclient.5.1.5.nupkg.sha512",

@@ -58,6 +58,14 @@ namespace Pms.Infrastructure.Services.DomainServices
             }
         }
 
+        public Task<ApplicationUser> GetUserByUxId(Guid userUxId)
+        {
+            return  _userRepository
+                .GetUsers(q => q.UxId == userUxId)
+                .Include(q => q.Client)
+                .SingleOrDefaultAsync();
+        }
+
         public string GenerateClientUserToken(string username, string clientUxId, int expireMinutes = 2)
         {
             var symmetricKey = Encoding.UTF8.GetBytes(_jwtConfig.Value.Secret);
@@ -137,14 +145,12 @@ namespace Pms.Infrastructure.Services.DomainServices
             return result.Succeeded ? user : null;
         }
 
-        public async Task<ApplicationUser> GetUser(string userName)
+        public  Task<ApplicationUser> GetUser(string userName)
         {
-            var user = await _userRepository
+            return _userRepository
                 .GetUsers(q => q.UserName == userName)
                 .Include(q => q.Client)
                 .SingleOrDefaultAsync();
-
-            return user;
         }
     }
 }

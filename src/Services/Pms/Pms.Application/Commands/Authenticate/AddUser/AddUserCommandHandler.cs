@@ -20,13 +20,10 @@ public class AddUserCommandHandler : IRequestHandler<AddUserCommand, AddUserComm
 
         if (createdUser == null) return new AddUserCommandResponse(false, ErrorCodes.CreateUserFailed);
 
-        var token = _identityService.GenerateToken(createdUser.UserName);
-
         return new AddUserCommandResponse(true)
         {
             UserName = createdUser.UserName,
-            UxId = createdUser.UxId,
-            AccessToken = token
+            UserUxId = createdUser.UxId,
         };
     }
 }

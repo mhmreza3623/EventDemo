@@ -937,6 +937,9 @@
         }
       },
       "Core.EventBus/1.0.0": {
+        "dependencies": {
+          "MediatR": "12.2.0"
+        },
         "runtime": {
           "Core.EventBus.dll": {}
         }

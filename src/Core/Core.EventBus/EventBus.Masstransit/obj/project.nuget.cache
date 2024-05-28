@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4BSPrrA1biCjmC/UuFiMQz0kteJAgEm4U3YZPZhOkhrt2La3YrQS8U4JG9/6j59QpL3llYaZldzte0z/awwRlg==",
+  "dgSpecHash": "lFQKeavV4BeVRCNHJsyPA398QbEbXgUpOnxhzOhapwRpKlwGoz1oa/dSgB6laYR7Q5CjwRNWl1RbILeus3tE6g==",
   "success": true,
   "projectFilePath": "E:\\My-Repo\\EventDemo\\src\\Core\\Core.EventBus\\EventBus.Masstransit\\Core.EventBus.Masstransit.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,8 @@
     "C:\\Users\\m.ramezani\\.nuget\\packages\\masstransit.aspnetcore\\7.3.1\\masstransit.aspnetcore.7.3.1.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\masstransit.extensions.dependencyinjection\\7.3.1\\masstransit.extensions.dependencyinjection.7.3.1.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\masstransit.rabbitmq\\8.2.2\\masstransit.rabbitmq.8.2.2.nupkg.sha512",
+    "C:\\Users\\m.ramezani\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\m.ramezani\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.0\\microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",

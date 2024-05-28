@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "PMuK59THiYtiHXda/mHI7Tu+r3omNgCjTbdmPQyZkjzq04uIws7kmSq1epRinee/v5zjXaOArMNcrARpLwV5Ew==",
+  "dgSpecHash": "Sh3oY6JDVhsg8R3VfWSw4ONdX5N8IOo7pXPaEqzMBkVzEsmH1FRUOrSMGYQgPeg2rXvCbXIxkpxbIDashoBXeQ==",
   "success": true,
   "projectFilePath": "E:\\My-Repo\\EventDemo\\src\\Core\\Core.EventBus\\EventBus.Base\\Core.EventBus.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\m.ramezani\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\m.ramezani\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\m.ramezani\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -17,13 +17,13 @@ public class GetTokenCommandHandler : IRequestHandler<GetTokenCommand, GetTokenC
     }
     public async Task<GetTokenCommandResponse> Handle(GetTokenCommand command, CancellationToken cancellationToken)
     {
-        var userIsValid = await _identityService.CheckPassword(command.UserName,command.Password);
-        if (!userIsValid)
+        var user = await _identityService.GetUserByUxId(Guid.Parse(command.UserUxId));
+        if (user is null)
         {
             return new GetTokenCommandResponse(false, ErrorCodes.InvalidUser);
         }
 
-        var token = _identityService.GenerateToken(command.UserName, 2);
+        var token = _identityService.GenerateToken(user.UserName, 1450);
 
         var principal = _identityService.GetPrincipal(token);
 
