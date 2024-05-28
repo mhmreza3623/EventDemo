@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GWbBiI+anJkYUmpzlTXecPEUuAEld/D9X/9P5ytTHu4Ediz9lCJtizH6YVpkGej05vv22Y1kim9nwUVtsEpBzg==",
+  "dgSpecHash": "hgUVsc6DKBTrkwFuE2hQsBtF8CFPkVM2Bv9mrJI85HeUEQLZmOsKRhYn8lm+2+FCcK3zi0PheBOhNniPUIdqmA==",
   "success": true,
-  "projectFilePath": "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\TransactionIntegrationEvents\\SharedModels.csproj",
+  "projectFilePath": "E:\\My-Repo\\EventDemo\\src\\Services\\Shared\\TransactionIntegrationEvents\\Shared.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\m.ramezani\\.nuget\\packages\\masstransit.abstractions\\8.2.2\\masstransit.abstractions.8.2.2.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

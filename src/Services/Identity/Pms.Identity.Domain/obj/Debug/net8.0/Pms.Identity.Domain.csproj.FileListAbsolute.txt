@@ -1,0 +1,16 @@
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.Domain\bin\Debug\net8.0\Pms.Identity.Domain.deps.json
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.Domain\bin\Debug\net8.0\Pms.Identity.Domain.dll
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.Domain\bin\Debug\net8.0\Pms.Identity.Domain.pdb
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.Domain\bin\Debug\net8.0\DataModels.Core.dll
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.Domain\bin\Debug\net8.0\DataModels.Core.pdb
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.Domain\obj\Debug\net8.0\Pms.Identity.Domain.csproj.AssemblyReference.cache
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.Domain\obj\Debug\net8.0\Pms.Identity.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.Domain\obj\Debug\net8.0\Pms.Identity.Domain.AssemblyInfoInputs.cache
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.Domain\obj\Debug\net8.0\Pms.Identity.Domain.AssemblyInfo.cs
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.Domain\obj\Debug\net8.0\Pms.Identity.Domain.csproj.CoreCompileInputs.cache
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.Domain\obj\Debug\net8.0\Pms.Identity.Domain.sourcelink.json
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.Domain\obj\Debug\net8.0\Pms.Iden.F44A3A29.Up2Date
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.Domain\obj\Debug\net8.0\Pms.Identity.Domain.dll
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.Domain\obj\Debug\net8.0\refint\Pms.Identity.Domain.dll
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.Domain\obj\Debug\net8.0\Pms.Identity.Domain.pdb
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.Domain\obj\Debug\net8.0\ref\Pms.Identity.Domain.dll

@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Immutable;
-using System.Linq.Expressions;
-using DataModels.Core.MongoDb;
+﻿using System.Collections.Immutable;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using Pms.Domain.Repositories;
+using SharedKernel.Common.MongoDb;
 
 namespace Pms.Infrastructure.Persistence.MongoDb.Repositories;
 

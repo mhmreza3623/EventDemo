@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using System.Text;
-using System.Threading.Tasks;
-using DataModels.Core.SqlModels;
+﻿using SharedKernel.Common.SqlModels;
 
 namespace Pms.Domain.Entities
 {
@@ -12,9 +6,18 @@ namespace Pms.Domain.Entities
     {
         public string Name { get; set; }
         public string DisplayName { get; set; }
-        public string Ips { get; set; }
+        public string? Ips { get; set; }
         public bool IsActive { get; set; }
+        public string DpkUserName { get; set; }
+        public string DpkPassword { get; set; }
 
-        public ICollection<Account> Accounts { get; set; }
+        /// <summary>
+        /// اطلاعاتی به ازای هر سامانه است که از بانک دریافت میشود 
+        /// </summary>
+        public string? ProviderUsername { get; set; }
+        public string? ProviderPassword { get; set; }
+
+        public List<ApplicationUser> Users { get; set; }
+
     }
 }

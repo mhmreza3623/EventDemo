@@ -1,4 +1,4 @@
-﻿using DataModels.Core.MongoDb;
+﻿using SharedKernel.Common.MongoDb;
 
 namespace Pms.Domain.Repositories
 {

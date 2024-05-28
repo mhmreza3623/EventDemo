@@ -24,11 +24,11 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
     <PackageReference Include="MongoDB.Driver" Version="2.25.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Core\DataBase\DataBase.Core\DataModels.Core.csproj" />
-    <ProjectReference Include="..\..\..\Core\Logging\Logging.Core\Logging.Core.csproj" />
+    <ProjectReference Include="..\Pms.Application\Pms.Application.csproj" />
     <ProjectReference Include="..\Pms.Domain\Pms.Domain.csproj" />
   </ItemGroup>
 

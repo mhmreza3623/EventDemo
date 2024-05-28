@@ -1,0 +1,2 @@
+obj\Debug\net8.0\Protos/Client.cs \
+obj\Debug\net8.0\Protos/ClientGrpc.cs: Protos/client.proto

@@ -1,8 +1,8 @@
 E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\bin\Debug\net8.0\Pms.Domain.deps.json
 E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\bin\Debug\net8.0\Pms.Domain.dll
 E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\bin\Debug\net8.0\Pms.Domain.pdb
-E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\bin\Debug\net8.0\DataModels.Core.dll
-E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\bin\Debug\net8.0\DataModels.Core.pdb
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\bin\Debug\net8.0\SharedKernel.dll
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\bin\Debug\net8.0\SharedKernel.pdb
 E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\obj\Debug\net8.0\Pms.Domain.csproj.AssemblyReference.cache
 E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\obj\Debug\net8.0\Pms.Domain.GeneratedMSBuildEditorConfig.editorconfig
 E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\obj\Debug\net8.0\Pms.Domain.AssemblyInfoInputs.cache
@@ -14,3 +14,5 @@ E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\obj\Debug\net8.0\Pms.Domain.dll
 E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\obj\Debug\net8.0\refint\Pms.Domain.dll
 E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\obj\Debug\net8.0\Pms.Domain.pdb
 E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\obj\Debug\net8.0\ref\Pms.Domain.dll
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\bin\Debug\net8.0\Core.EventBus.dll
+E:\My-Repo\EventDemo\src\Services\Pms\Pms.Domain\bin\Debug\net8.0\Core.EventBus.pdb

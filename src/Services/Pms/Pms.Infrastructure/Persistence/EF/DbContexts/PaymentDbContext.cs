@@ -5,13 +5,12 @@ using Pms.Infrastructure.Persistence.EF.EntitiesConfigurations.Payment;
 
 namespace Pms.Infrastructure.Persistence.EF.DbContexts
 {
-    public class PaymentDbContext : IdentityDbContext
+    public class PaymentDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, long>
     {
         #region DbSets
-        public DbSet<Transaction> Transactions { get; set; }
-        public DbSet<TransactionDetail> TransactionDetails { get; set; }
+        public DbSet<Payment> Payments { get; set; }
+        public DbSet<PaymentDetail> PaymentDetails { get; set; }
         public DbSet<Client> Clients { get; set; }
-        public DbSet<Account> Accounts { get; set; }
 
         #endregion
 
@@ -22,7 +21,7 @@ namespace Pms.Infrastructure.Persistence.EF.DbContexts
         {
             base.OnModelCreating(builder);
 
-            builder.ApplyConfigurationsFromAssembly(typeof(TransactionConfiguration).Assembly);
+            builder.ApplyConfigurationsFromAssembly(typeof(PaymentConfiguration).Assembly);
         }
     }
 }

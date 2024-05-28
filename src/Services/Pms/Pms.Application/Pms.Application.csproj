@@ -7,14 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="MediatR" Version="12.2.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Core\EventBus\EventBus.Base\Core.EventBus.csproj" />
-    <ProjectReference Include="..\..\Shared\TransactionIntegrationEvents\SharedModels.csproj" />
+    <ProjectReference Include="..\..\..\Core\SharedKernel\Core.SharedKernel\SharedKernel.csproj" />
+    <ProjectReference Include="..\..\Shared\TransactionIntegrationEvents\Shared.Services.csproj" />
     <ProjectReference Include="..\Pms.Domain\Pms.Domain.csproj" />
-    <ProjectReference Include="..\Pms.Infrastructure\Pms.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dtos\Identity\" />
+    <Folder Include="Validations\Client\" />
+    <Folder Include="Validations\OnlinePayment\" />
   </ItemGroup>
 
 </Project>

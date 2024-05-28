@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "PvHRh/EsCLK4aKPxCPtGjX1hKfs2zr+9zA3yScB/U3Y=",
-  "Source": "Pms.Identity.APIs",
-  "BasePath": "_content/Pms.Identity.APIs",
+  "Hash": "oeEARNu7kW7oEaooWGY1lpSVS0AjCvYhaJSmgRTKuio=",
+  "Source": "Identity.APIs",
+  "BasePath": "_content/Identity.APIs",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

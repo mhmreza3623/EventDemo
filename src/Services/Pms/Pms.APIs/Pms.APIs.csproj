@@ -11,8 +11,31 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove=".filenesting.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Protos\client.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Include="Protos\client.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Include=".filenesting.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Google.Protobuf" Version="3.27.0" />
+	  <PackageReference Include="Grpc.Core" Version="2.46.6" />
+	  <PackageReference Include="Grpc.Tools" Version="2.64.0">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
 	  <PackageReference Include="MediatR" Version="12.2.0" />
 	  <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.5" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
 	    <PrivateAssets>all</PrivateAssets>
@@ -26,12 +49,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Core\EventBus\EventBus.Masstransit\Core.EventBus.Masstransit.csproj" />
-    <ProjectReference Include="..\..\..\Core\Logging\Logging.Core\Logging.Core.csproj" />
-    <ProjectReference Include="..\..\Shared\Shared.AuditLog\Shared.AuditLog.csproj" />
+    <ProjectReference Include="..\..\..\Core\Core.EventBus\EventBus.Base\Core.EventBus.csproj" />
+    <ProjectReference Include="..\..\..\Core\Core.EventBus\EventBus.Masstransit\Core.EventBus.Masstransit.csproj" />
+    <ProjectReference Include="..\..\..\Core\SharedKernel\Core.SharedKernel\SharedKernel.csproj" />
     <ProjectReference Include="..\Pms.Application\Pms.Application.csproj" />
-    <ProjectReference Include="..\Pms.Domain\Pms.Domain.csproj" />
     <ProjectReference Include="..\Pms.Infrastructure\Pms.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos\client.proto" GrpcServices="Server">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Protobuf>
   </ItemGroup>
 
 </Project>

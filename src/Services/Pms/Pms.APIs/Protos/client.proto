@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+option csharp_namespace = "Pms.APIs.Protos";
+
+service ClientService{
+	rpc RegisterClient(registerClientRequest) returns (registerClientResponse){}
+	rpc UpdateKarizCredential(updateCredentialRequest) returns (updateCredentialResponse){}
+	rpc UpdateDpkCredential(updateCredentialRequest) returns (updateCredentialResponse){}
+}
+
+message registerClientRequest{
+	string name=1;
+	string displayName=2;
+	string ips=3;
+	string isActive=4;
+	string dpkUserName=5;
+	string dpkPassword=6;
+	string karizUsername=7;
+	string providerPassword=8;
+
+}
+
+message registerClientResponse{
+	string clientUxId=1;
+	bool succeed=2;
+}
+
+////////
+message updateCredentialRequest{
+	string clientUxId=1;
+	string username=2;
+	string password=3;
+}
+
+message updateCredentialResponse{
+	string clientUxId=1;
+	bool succeed=2;
+}
+

@@ -1,0 +1,16 @@
+E:\My-Repo\EventDemo\src\Core\SharedKernel\Core.SharedKernel\bin\Debug\net8.0\SharedKernel.deps.json
+E:\My-Repo\EventDemo\src\Core\SharedKernel\Core.SharedKernel\bin\Debug\net8.0\SharedKernel.dll
+E:\My-Repo\EventDemo\src\Core\SharedKernel\Core.SharedKernel\bin\Debug\net8.0\SharedKernel.pdb
+E:\My-Repo\EventDemo\src\Core\SharedKernel\Core.SharedKernel\obj\Debug\net8.0\SharedKernel.csproj.AssemblyReference.cache
+E:\My-Repo\EventDemo\src\Core\SharedKernel\Core.SharedKernel\obj\Debug\net8.0\SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+E:\My-Repo\EventDemo\src\Core\SharedKernel\Core.SharedKernel\obj\Debug\net8.0\SharedKernel.AssemblyInfoInputs.cache
+E:\My-Repo\EventDemo\src\Core\SharedKernel\Core.SharedKernel\obj\Debug\net8.0\SharedKernel.AssemblyInfo.cs
+E:\My-Repo\EventDemo\src\Core\SharedKernel\Core.SharedKernel\obj\Debug\net8.0\SharedKernel.csproj.CoreCompileInputs.cache
+E:\My-Repo\EventDemo\src\Core\SharedKernel\Core.SharedKernel\obj\Debug\net8.0\SharedKernel.sourcelink.json
+E:\My-Repo\EventDemo\src\Core\SharedKernel\Core.SharedKernel\obj\Debug\net8.0\SharedKernel.dll
+E:\My-Repo\EventDemo\src\Core\SharedKernel\Core.SharedKernel\obj\Debug\net8.0\refint\SharedKernel.dll
+E:\My-Repo\EventDemo\src\Core\SharedKernel\Core.SharedKernel\obj\Debug\net8.0\SharedKernel.pdb
+E:\My-Repo\EventDemo\src\Core\SharedKernel\Core.SharedKernel\obj\Debug\net8.0\ref\SharedKernel.dll
+E:\My-Repo\EventDemo\src\Core\SharedKernel\Core.SharedKernel\bin\Debug\net8.0\Core.EventBus.dll
+E:\My-Repo\EventDemo\src\Core\SharedKernel\Core.SharedKernel\bin\Debug\net8.0\Core.EventBus.pdb
+E:\My-Repo\EventDemo\src\Core\SharedKernel\Core.SharedKernel\obj\Debug\net8.0\SharedKe.80CED6BF.Up2Date
