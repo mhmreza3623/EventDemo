@@ -24,22 +24,22 @@ namespace Pms.APIs.Protos {
     static ClientReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNQcm90b3MvY2xpZW50LnByb3RvIrEBChVyZWdpc3RlckNsaWVudFJlcXVl",
+            "ChNQcm90b3MvY2xpZW50LnByb3RvIrQBChVyZWdpc3RlckNsaWVudFJlcXVl",
             "c3QSDAoEbmFtZRgBIAEoCRITCgtkaXNwbGF5TmFtZRgCIAEoCRILCgNpcHMY",
             "AyABKAkSEAoIaXNBY3RpdmUYBCABKAkSEwoLZHBrVXNlck5hbWUYBSABKAkS",
-            "EwoLZHBrUGFzc3dvcmQYBiABKAkSFQoNa2FyaXpVc2VybmFtZRgHIAEoCRIV",
-            "Cg1rYXJpelBhc3N3b3JkGAggASgJIj0KFnJlZ2lzdGVyQ2xpZW50UmVzcG9u",
-            "c2USEgoKY2xpZW50VXhJZBgBIAEoCRIPCgdzdWNjZWVkGAIgASgIIlEKF3Vw",
-            "ZGF0ZUNyZWRlbnRpYWxSZXF1ZXN0EhIKCmNsaWVudFV4SWQYASABKAkSEAoI",
-            "dXNlcm5hbWUYAiABKAkSEAoIcGFzc3dvcmQYAyABKAkiPwoYdXBkYXRlQ3Jl",
-            "ZGVudGlhbFJlc3BvbnNlEhIKCmNsaWVudFV4SWQYASABKAkSDwoHc3VjY2Vl",
-            "ZBgCIAEoCDLyAQoNQ2xpZW50U2VydmljZRJDCg5SZWdpc3RlckNsaWVudBIW",
-            "LnJlZ2lzdGVyQ2xpZW50UmVxdWVzdBoXLnJlZ2lzdGVyQ2xpZW50UmVzcG9u",
-            "c2UiABJOChVVcGRhdGVLYXJpekNyZWRlbnRpYWwSGC51cGRhdGVDcmVkZW50",
-            "aWFsUmVxdWVzdBoZLnVwZGF0ZUNyZWRlbnRpYWxSZXNwb25zZSIAEkwKE1Vw",
-            "ZGF0ZURwa0NyZWRlbnRpYWwSGC51cGRhdGVDcmVkZW50aWFsUmVxdWVzdBoZ",
-            "LnVwZGF0ZUNyZWRlbnRpYWxSZXNwb25zZSIAQhKqAg9QbXMuQVBJcy5Qcm90",
-            "b3NiBnByb3RvMw=="));
+            "EwoLZHBrUGFzc3dvcmQYBiABKAkSFQoNa2FyaXpVc2VybmFtZRgHIAEoCRIY",
+            "ChBwcm92aWRlclBhc3N3b3JkGAggASgJIj0KFnJlZ2lzdGVyQ2xpZW50UmVz",
+            "cG9uc2USEgoKY2xpZW50VXhJZBgBIAEoCRIPCgdzdWNjZWVkGAIgASgIIlEK",
+            "F3VwZGF0ZUNyZWRlbnRpYWxSZXF1ZXN0EhIKCmNsaWVudFV4SWQYASABKAkS",
+            "EAoIdXNlcm5hbWUYAiABKAkSEAoIcGFzc3dvcmQYAyABKAkiPwoYdXBkYXRl",
+            "Q3JlZGVudGlhbFJlc3BvbnNlEhIKCmNsaWVudFV4SWQYASABKAkSDwoHc3Vj",
+            "Y2VlZBgCIAEoCDLyAQoNQ2xpZW50U2VydmljZRJDCg5SZWdpc3RlckNsaWVu",
+            "dBIWLnJlZ2lzdGVyQ2xpZW50UmVxdWVzdBoXLnJlZ2lzdGVyQ2xpZW50UmVz",
+            "cG9uc2UiABJOChVVcGRhdGVLYXJpekNyZWRlbnRpYWwSGC51cGRhdGVDcmVk",
+            "ZW50aWFsUmVxdWVzdBoZLnVwZGF0ZUNyZWRlbnRpYWxSZXNwb25zZSIAEkwK",
+            "E1VwZGF0ZURwa0NyZWRlbnRpYWwSGC51cGRhdGVDcmVkZW50aWFsUmVxdWVz",
+            "dBoZLnVwZGF0ZUNyZWRlbnRpYWxSZXNwb25zZSIAQhKqAg9QbXMuQVBJcy5Q",
+            "cm90b3NiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -95,7 +95,7 @@ namespace Pms.APIs.Protos {
       dpkUserName_ = other.dpkUserName_;
       dpkPassword_ = other.dpkPassword_;
       karizUsername_ = other.karizUsername_;
-      karizPassword_ = other.karizPassword_;
+      providerPassword_ = other.providerPassword_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -189,15 +189,15 @@ namespace Pms.APIs.Protos {
       }
     }
 
-    /// <summary>Field number for the "karizPassword" field.</summary>
-    public const int KarizPasswordFieldNumber = 8;
-    private string karizPassword_ = "";
+    /// <summary>Field number for the "providerPassword" field.</summary>
+    public const int ProviderPasswordFieldNumber = 8;
+    private string providerPassword_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string KarizPassword {
-      get { return karizPassword_; }
+    public string ProviderPassword {
+      get { return providerPassword_; }
       set {
-        karizPassword_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        providerPassword_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -223,7 +223,7 @@ namespace Pms.APIs.Protos {
       if (DpkUserName != other.DpkUserName) return false;
       if (DpkPassword != other.DpkPassword) return false;
       if (KarizUsername != other.KarizUsername) return false;
-      if (KarizPassword != other.KarizPassword) return false;
+      if (ProviderPassword != other.ProviderPassword) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -238,7 +238,7 @@ namespace Pms.APIs.Protos {
       if (DpkUserName.Length != 0) hash ^= DpkUserName.GetHashCode();
       if (DpkPassword.Length != 0) hash ^= DpkPassword.GetHashCode();
       if (KarizUsername.Length != 0) hash ^= KarizUsername.GetHashCode();
-      if (KarizPassword.Length != 0) hash ^= KarizPassword.GetHashCode();
+      if (ProviderPassword.Length != 0) hash ^= ProviderPassword.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -327,9 +327,9 @@ namespace Pms.APIs.Protos {
         output.WriteRawTag(58);
         output.WriteString(KarizUsername);
       }
-      if (KarizPassword.Length != 0) {
+      if (ProviderPassword.Length != 0) {
         output.WriteRawTag(66);
-        output.WriteString(KarizPassword);
+        output.WriteString(ProviderPassword);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -362,8 +362,8 @@ namespace Pms.APIs.Protos {
       if (KarizUsername.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(KarizUsername);
       }
-      if (KarizPassword.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(KarizPassword);
+      if (ProviderPassword.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ProviderPassword);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -398,8 +398,8 @@ namespace Pms.APIs.Protos {
       if (other.KarizUsername.Length != 0) {
         KarizUsername = other.KarizUsername;
       }
-      if (other.KarizPassword.Length != 0) {
-        KarizPassword = other.KarizPassword;
+      if (other.ProviderPassword.Length != 0) {
+        ProviderPassword = other.ProviderPassword;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -492,7 +492,7 @@ namespace Pms.APIs.Protos {
             break;
           }
           case 66: {
-            KarizPassword = input.ReadString();
+            ProviderPassword = input.ReadString();
             break;
           }
         }
