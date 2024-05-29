@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Core.EventBus.Masstransit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3771a72c8c4466cb57dcd3ec40c3713dca6ba886")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5a9499570d327512ae90bbbadd317b13626accd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Core.EventBus.Masstransit")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Core.EventBus.Masstransit")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

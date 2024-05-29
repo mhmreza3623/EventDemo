@@ -1,3 +1,4 @@
+using Identity.APIs.Configs;
 using Identity.Infrastructure.Persistence;
 using SharedKernel.Identities;
 
@@ -11,8 +12,16 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
+builder.Services.AddIdentityServer()
+    .AddInMemoryClients(IdentityConfiguration.Clients)
+    .AddInMemoryIdentityResources(IdentityConfiguration.IdentityResources)
+    .AddInMemoryApiResources(IdentityConfiguration.ApiResources)
+    .AddInMemoryApiScopes(IdentityConfiguration.ApiScopes)
+    .AddTestUsers(IdentityConfiguration.TestUsers)
+    .AddDeveloperSigningCredential();
+
 //JWT
-builder.Services.AddJWtConfig(builder.Configuration);
+builder.Services.AddJwtConfig(builder.Configuration);
 
 //DataBase
 builder.Services.AddDbContextConfig(builder.Configuration);
@@ -30,6 +39,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseIdentityServer();
 
 app.MapControllers();
 

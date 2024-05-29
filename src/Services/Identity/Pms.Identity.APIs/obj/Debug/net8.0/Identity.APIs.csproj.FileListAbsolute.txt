@@ -177,3 +177,13 @@ E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.APIs\obj\Debug\net8.0\re
 E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.APIs\bin\Debug\net8.0\Newtonsoft.Json.dll
 E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.APIs\bin\Debug\net8.0\Core.EventBus.dll
 E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.APIs\bin\Debug\net8.0\Core.EventBus.pdb
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.APIs\bin\Debug\net8.0\AutoMapper.dll
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.APIs\bin\Debug\net8.0\IdentityModel.dll
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.APIs\bin\Debug\net8.0\IdentityServer4.dll
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.APIs\bin\Debug\net8.0\IdentityServer4.AspNetIdentity.dll
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.APIs\bin\Debug\net8.0\IdentityServer4.EntityFramework.dll
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.APIs\bin\Debug\net8.0\IdentityServer4.EntityFramework.Storage.dll
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.APIs\bin\Debug\net8.0\IdentityServer4.Storage.dll
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.APIs\bin\Debug\net8.0\MediatR.dll
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.APIs\bin\Debug\net8.0\MediatR.Contracts.dll
+E:\My-Repo\EventDemo\src\Services\Identity\Pms.Identity.APIs\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll

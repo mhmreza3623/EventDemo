@@ -50,6 +50,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -120,86 +126,6 @@
             "MongoDB.Bson": {
               "target": "Package",
               "version": "[2.25.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "E:\\My-Repo\\EventDemo\\src\\Core\\Identity\\Core.Identity\\Core.Identity.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\My-Repo\\EventDemo\\src\\Core\\Identity\\Core.Identity\\Core.Identity.csproj",
-        "projectName": "Core.Identity",
-        "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\Identity\\Core.Identity\\Core.Identity.csproj",
-        "packagesPath": "C:\\Users\\m.ramezani\\.nuget\\packages\\",
-        "outputPath": "E:\\My-Repo\\EventDemo\\src\\Core\\Identity\\Core.Identity\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\m.ramezani\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[8.0.5, )"
-            },
-            "Microsoft.Extensions.DependencyInjection.Abstractions": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Serilog.AspNetCore": {
-              "target": "Package",
-              "version": "[8.0.1, )"
             }
           },
           "imports": [
@@ -372,9 +298,6 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\My-Repo\\EventDemo\\src\\Core\\Identity\\Core.Identity\\Core.Identity.csproj": {
-                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\Identity\\Core.Identity\\Core.Identity.csproj"
-              },
               "E:\\My-Repo\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Infrastructure\\Identity.Infrastructure.csproj": {
                 "projectPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Infrastructure\\Identity.Infrastructure.csproj"
               }
@@ -396,6 +319,18 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "IdentityServer4": {
+              "target": "Package",
+              "version": "[4.1.2, )"
+            },
+            "IdentityServer4.AspNetIdentity": {
+              "target": "Package",
+              "version": "[4.1.2, )"
+            },
+            "IdentityServer4.EntityFramework": {
+              "target": "Package",
+              "version": "[4.1.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"

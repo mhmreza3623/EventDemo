@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ilOoUEN9OslbUmSgWUe2auhxY/gdzlDL+QgRKuPK1QsfFFStKttalH4kQDowEaXh/EK5Z/u3E64unPJLMKVCZg==",
+  "dgSpecHash": "LMhPgaAj+rH0fkHnmrsawL4Dhog2FlncOuD1jIqL8Fm5h+PKnu+2DyPnR3XDTV7KNUk7FubE/EZsPu4vo9caEA==",
   "success": true,
   "projectFilePath": "E:\\My-Repo\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Infrastructure\\Identity.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,8 @@
     "C:\\Users\\m.ramezani\\.nuget\\packages\\bouncycastle.netcore\\2.2.1\\bouncycastle.netcore.2.2.1.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\m.ramezani\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\m.ramezani\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.5\\microsoft.aspnetcore.authentication.jwtbearer.8.0.5.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.5\\microsoft.aspnetcore.cryptography.internal.8.0.5.nupkg.sha512",
     "C:\\Users\\m.ramezani\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.5\\microsoft.aspnetcore.cryptography.keyderivation.8.0.5.nupkg.sha512",

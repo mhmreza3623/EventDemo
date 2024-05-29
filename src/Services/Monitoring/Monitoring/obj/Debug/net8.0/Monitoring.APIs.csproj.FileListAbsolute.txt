@@ -31,3 +31,14 @@ E:\My-Repo\EventDemo\src\Services\Monitoring\Monitoring\obj\Debug\net8.0\refint\
 E:\My-Repo\EventDemo\src\Services\Monitoring\Monitoring\obj\Debug\net8.0\Monitoring.APIs.pdb
 E:\My-Repo\EventDemo\src\Services\Monitoring\Monitoring\obj\Debug\net8.0\Monitoring.APIs.genruntimeconfig.cache
 E:\My-Repo\EventDemo\src\Services\Monitoring\Monitoring\obj\Debug\net8.0\ref\Monitoring.APIs.dll
+E:\My-Repo\EventDemo\src\Services\Monitoring\Monitoring\bin\Debug\net8.0\IdentityModel.dll
+E:\My-Repo\EventDemo\src\Services\Monitoring\Monitoring\bin\Debug\net8.0\IdentityModel.AspNetCore.OAuth2Introspection.dll
+E:\My-Repo\EventDemo\src\Services\Monitoring\Monitoring\bin\Debug\net8.0\IdentityServer4.AccessTokenValidation.dll
+E:\My-Repo\EventDemo\src\Services\Monitoring\Monitoring\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\My-Repo\EventDemo\src\Services\Monitoring\Monitoring\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\My-Repo\EventDemo\src\Services\Monitoring\Monitoring\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\My-Repo\EventDemo\src\Services\Monitoring\Monitoring\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\My-Repo\EventDemo\src\Services\Monitoring\Monitoring\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\My-Repo\EventDemo\src\Services\Monitoring\Monitoring\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\My-Repo\EventDemo\src\Services\Monitoring\Monitoring\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\My-Repo\EventDemo\src\Services\Monitoring\Monitoring\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
