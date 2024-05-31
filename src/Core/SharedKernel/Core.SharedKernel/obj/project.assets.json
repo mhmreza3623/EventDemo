@@ -3758,26 +3758,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\m.ramezani\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Users\\SMT\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\My-Repo\\EventDemo\\src\\Core\\SharedKernel\\Core.SharedKernel\\SharedKernel.csproj",
+      "projectUniqueName": "G:\\Sources\\EventDemo\\src\\Core\\SharedKernel\\Core.SharedKernel\\SharedKernel.csproj",
       "projectName": "SharedKernel",
-      "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\SharedKernel\\Core.SharedKernel\\SharedKernel.csproj",
-      "packagesPath": "C:\\Users\\m.ramezani\\.nuget\\packages\\",
-      "outputPath": "E:\\My-Repo\\EventDemo\\src\\Core\\SharedKernel\\Core.SharedKernel\\obj\\",
+      "projectPath": "G:\\Sources\\EventDemo\\src\\Core\\SharedKernel\\Core.SharedKernel\\SharedKernel.csproj",
+      "packagesPath": "C:\\Users\\SMT\\.nuget\\packages\\",
+      "outputPath": "G:\\Sources\\EventDemo\\src\\Core\\SharedKernel\\Core.SharedKernel\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\m.ramezani\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\SMT\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3785,15 +3782,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\My-Repo\\EventDemo\\src\\Core\\Core.EventBus\\EventBus.Base\\Core.EventBus.csproj": {
-              "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\Core.EventBus\\EventBus.Base\\Core.EventBus.csproj"
+            "G:\\Sources\\EventDemo\\src\\Core\\Core.EventBus\\EventBus.Base\\Core.EventBus.csproj": {
+              "projectPath": "G:\\Sources\\EventDemo\\src\\Core\\Core.EventBus\\EventBus.Base\\Core.EventBus.csproj"
             }
           }
         }
@@ -3804,9 +3800,7 @@
         ]
       },
       "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
+        "enableAudit": "default"
       }
     },
     "frameworks": {
@@ -3878,7 +3872,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

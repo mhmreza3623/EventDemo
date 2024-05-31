@@ -35,16 +35,21 @@ namespace Identity.APIs.Configs
         public static IEnumerable<ApiScope> ApiScopes =>
             new ApiScope[]
             {
-                new ApiScope("myApi.read"),
-                new ApiScope("myApi.write"),
+                new ApiScope("monitoringApiScope"),
+                new ApiScope("paymentApiscope"),
             };
 
         public static IEnumerable<ApiResource> ApiResources =>
             new ApiResource[]
             {
-                new ApiResource("myApi")
+                new ApiResource("monitoringApi")
                 {
-                    Scopes = new List<string>{ "myApi.read","myApi.write" },
+                    Scopes = new List<string>{ "monitoringApiScope"},
+                    ApiSecrets = new List<Secret>{ new Secret("supersecret".Sha256()) }
+                },
+                 new ApiResource("paymentApi")
+                {
+                    Scopes = new List<string>{ "paymentApiscope" },
                     ApiSecrets = new List<Secret>{ new Secret("supersecret".Sha256()) }
                 }
             };
@@ -58,7 +63,7 @@ namespace Identity.APIs.Configs
                     ClientName = "Client Credentials Client",
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
                     ClientSecrets = { new Secret("secret".Sha256()) },
-                    AllowedScopes = { "myApi.read" }
+                    AllowedScopes = { "paymentApiscope" }
                 },
             };
     }

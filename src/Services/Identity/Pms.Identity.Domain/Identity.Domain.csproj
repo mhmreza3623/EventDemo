@@ -11,7 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Core\DataBase\DataBase.Core\DataModels.Core.csproj" />
     <ProjectReference Include="..\..\..\Core\SharedKernel\Core.SharedKernel\SharedKernel.csproj" />
   </ItemGroup>
 

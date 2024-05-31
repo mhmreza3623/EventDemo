@@ -1,25 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\My-Repo\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Infrastructure\\Identity.Infrastructure.csproj": {}
+    "G:\\Sources\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Infrastructure\\Identity.Infrastructure.csproj": {}
   },
   "projects": {
-    "E:\\My-Repo\\EventDemo\\src\\Core\\Core.EventBus\\EventBus.Base\\Core.EventBus.csproj": {
+    "G:\\Sources\\EventDemo\\src\\Core\\Core.EventBus\\EventBus.Base\\Core.EventBus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\My-Repo\\EventDemo\\src\\Core\\Core.EventBus\\EventBus.Base\\Core.EventBus.csproj",
+        "projectUniqueName": "G:\\Sources\\EventDemo\\src\\Core\\Core.EventBus\\EventBus.Base\\Core.EventBus.csproj",
         "projectName": "Core.EventBus",
-        "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\Core.EventBus\\EventBus.Base\\Core.EventBus.csproj",
-        "packagesPath": "C:\\Users\\m.ramezani\\.nuget\\packages\\",
-        "outputPath": "E:\\My-Repo\\EventDemo\\src\\Core\\Core.EventBus\\EventBus.Base\\obj\\",
+        "projectPath": "G:\\Sources\\EventDemo\\src\\Core\\Core.EventBus\\EventBus.Base\\Core.EventBus.csproj",
+        "packagesPath": "C:\\Users\\SMT\\.nuget\\packages\\",
+        "outputPath": "G:\\Sources\\EventDemo\\src\\Core\\Core.EventBus\\EventBus.Base\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\m.ramezani\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\SMT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,7 +25,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,9 +39,7 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
+          "enableAudit": "default"
         }
       },
       "frameworks": {
@@ -72,98 +67,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataModels.Core.csproj": {
+    "G:\\Sources\\EventDemo\\src\\Core\\SharedKernel\\Core.SharedKernel\\SharedKernel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataModels.Core.csproj",
-        "projectName": "DataModels.Core",
-        "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataModels.Core.csproj",
-        "packagesPath": "C:\\Users\\m.ramezani\\.nuget\\packages\\",
-        "outputPath": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\m.ramezani\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "MongoDB.Bson": {
-              "target": "Package",
-              "version": "[2.25.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "E:\\My-Repo\\EventDemo\\src\\Core\\SharedKernel\\Core.SharedKernel\\SharedKernel.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\My-Repo\\EventDemo\\src\\Core\\SharedKernel\\Core.SharedKernel\\SharedKernel.csproj",
+        "projectUniqueName": "G:\\Sources\\EventDemo\\src\\Core\\SharedKernel\\Core.SharedKernel\\SharedKernel.csproj",
         "projectName": "SharedKernel",
-        "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\SharedKernel\\Core.SharedKernel\\SharedKernel.csproj",
-        "packagesPath": "C:\\Users\\m.ramezani\\.nuget\\packages\\",
-        "outputPath": "E:\\My-Repo\\EventDemo\\src\\Core\\SharedKernel\\Core.SharedKernel\\obj\\",
+        "projectPath": "G:\\Sources\\EventDemo\\src\\Core\\SharedKernel\\Core.SharedKernel\\SharedKernel.csproj",
+        "packagesPath": "C:\\Users\\SMT\\.nuget\\packages\\",
+        "outputPath": "G:\\Sources\\EventDemo\\src\\Core\\SharedKernel\\Core.SharedKernel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\m.ramezani\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\SMT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -171,15 +92,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\My-Repo\\EventDemo\\src\\Core\\Core.EventBus\\EventBus.Base\\Core.EventBus.csproj": {
-                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\Core.EventBus\\EventBus.Base\\Core.EventBus.csproj"
+              "G:\\Sources\\EventDemo\\src\\Core\\Core.EventBus\\EventBus.Base\\Core.EventBus.csproj": {
+                "projectPath": "G:\\Sources\\EventDemo\\src\\Core\\Core.EventBus\\EventBus.Base\\Core.EventBus.csproj"
               }
             }
           }
@@ -190,9 +110,7 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
+          "enableAudit": "default"
         }
       },
       "frameworks": {
@@ -264,26 +182,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\My-Repo\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Domain\\Identity.Domain.csproj": {
+    "G:\\Sources\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Domain\\Identity.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\My-Repo\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Domain\\Identity.Domain.csproj",
+        "projectUniqueName": "G:\\Sources\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Domain\\Identity.Domain.csproj",
         "projectName": "Identity.Domain",
-        "projectPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Domain\\Identity.Domain.csproj",
-        "packagesPath": "C:\\Users\\m.ramezani\\.nuget\\packages\\",
-        "outputPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Domain\\obj\\",
+        "projectPath": "G:\\Sources\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Domain\\Identity.Domain.csproj",
+        "packagesPath": "C:\\Users\\SMT\\.nuget\\packages\\",
+        "outputPath": "G:\\Sources\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\m.ramezani\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\SMT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -291,18 +207,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataModels.Core.csproj": {
-                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\DataBase\\DataBase.Core\\DataModels.Core.csproj"
-              },
-              "E:\\My-Repo\\EventDemo\\src\\Core\\SharedKernel\\Core.SharedKernel\\SharedKernel.csproj": {
-                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Core\\SharedKernel\\Core.SharedKernel\\SharedKernel.csproj"
+              "G:\\Sources\\EventDemo\\src\\Core\\SharedKernel\\Core.SharedKernel\\SharedKernel.csproj": {
+                "projectPath": "G:\\Sources\\EventDemo\\src\\Core\\SharedKernel\\Core.SharedKernel\\SharedKernel.csproj"
               }
             }
           }
@@ -313,9 +225,7 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
+          "enableAudit": "default"
         }
       },
       "frameworks": {
@@ -343,26 +253,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\My-Repo\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Infrastructure\\Identity.Infrastructure.csproj": {
+    "G:\\Sources\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Infrastructure\\Identity.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\My-Repo\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Infrastructure\\Identity.Infrastructure.csproj",
+        "projectUniqueName": "G:\\Sources\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Infrastructure\\Identity.Infrastructure.csproj",
         "projectName": "Identity.Infrastructure",
-        "projectPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Infrastructure\\Identity.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\m.ramezani\\.nuget\\packages\\",
-        "outputPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Infrastructure\\obj\\",
+        "projectPath": "G:\\Sources\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Infrastructure\\Identity.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\SMT\\.nuget\\packages\\",
+        "outputPath": "G:\\Sources\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\m.ramezani\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\SMT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -370,15 +278,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\My-Repo\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Domain\\Identity.Domain.csproj": {
-                "projectPath": "E:\\My-Repo\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Domain\\Identity.Domain.csproj"
+              "G:\\Sources\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Domain\\Identity.Domain.csproj": {
+                "projectPath": "G:\\Sources\\EventDemo\\src\\Services\\Identity\\Pms.Identity.Domain\\Identity.Domain.csproj"
               }
             }
           }
@@ -389,9 +296,7 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
+          "enableAudit": "default"
         }
       },
       "frameworks": {
@@ -427,7 +332,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Sh3oY6JDVhsg8R3VfWSw4ONdX5N8IOo7pXPaEqzMBkVzEsmH1FRUOrSMGYQgPeg2rXvCbXIxkpxbIDashoBXeQ==",
+  "dgSpecHash": "qNL6dJ0coeRGFr+dvU620Jn+spUs/7xc+84S95xDf8ZJ6q/qLxdgbwLLfBBak41NpjZGY8aTW3ZC7L4hhEKTdQ==",
   "success": true,
-  "projectFilePath": "E:\\My-Repo\\EventDemo\\src\\Core\\Core.EventBus\\EventBus.Base\\Core.EventBus.csproj",
+  "projectFilePath": "G:\\Sources\\EventDemo\\src\\Core\\Core.EventBus\\EventBus.Base\\Core.EventBus.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\m.ramezani\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
-    "C:\\Users\\m.ramezani\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\m.ramezani\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+    "C:\\Users\\SMT\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\SMT\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\SMT\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

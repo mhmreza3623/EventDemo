@@ -74,6 +74,13 @@ builder.Services.AddMassTransitConsumers(builder.Configuration);
 //JWT
 builder.Services.AddJwtConfig(builder.Configuration);
 
+builder.Services.AddAuthentication("Bearer")
+    .AddIdentityServerAuthentication("Bearer", options =>
+    {
+        options.ApiName = "paymentApi";
+        options.Authority = "https://localhost:7044";
+    });
+
 //DomainServices
 builder.Services.AddDomainServices(builder.Configuration);
 
